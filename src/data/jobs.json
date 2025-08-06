@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Construction Worker",
+    "company": "BuildWell Middle East",
+    "location": "Dubai, UAE",
+    "domain": "Construction",
+    "type": "Full-time",
+    "experience": "1-3 years",
+    "salary": "AED 1,200 - 1,800/month"
+  },
+  {
+    "id": 2,
+    "title": "Electrician",
+    "company": "Qatar Electra Co.",
+    "location": "Doha, Qatar",
+    "domain": "Electrical Maintenance",
+    "type": "Full-time",
+    "experience": "2-4 years",
+    "salary": "QAR 1,500 - 2,200/month"
+  },
+  {
+    "id": 3,
+    "title": "Plumber",
+    "company": "Saudi Plumbing Works",
+    "location": "Riyadh, Saudi Arabia",
+    "domain": "Plumbing Services",
+    "type": "Full-time",
+    "experience": "2-5 years",
+    "salary": "SAR 1,400 - 2,000/month"
+  },
+  {
+    "id": 4,
+    "title": "Welder",
+    "company": "Oman Metalcraft Ltd.",
+    "location": "Muscat, Oman",
+    "domain": "Fabrication & Welding",
+    "type": "Contract",
+    "experience": "3-6 years",
+    "salary": "OMR 180 - 250/month"
+  },
+  {
+    "id": 5,
+    "title": "Housekeeping Staff",
+    "company": "CleanStay Services",
+    "location": "Kuala Lumpur, Malaysia",
+    "domain": "Hospitality",
+    "type": "Full-time",
+    "experience": "1-2 years",
+    "salary": "MYR 1,300 - 1,800/month"
+  },
+  {
+    "id": 6,
+    "title": "Forklift Operator",
+    "company": "Jeddah Logistics Hub",
+    "location": "Jeddah, Saudi Arabia",
+    "domain": "Logistics & Warehouse",
+    "type": "Full-time",
+    "experience": "2-3 years",
+    "salary": "SAR 1,600 - 2,200/month"
+  },
+  {
+    "id": 7,
+    "title": "Security Guard",
+    "company": "SecureForce UAE",
+    "location": "Abu Dhabi, UAE",
+    "domain": "Security Services",
+    "type": "Full-time",
+    "experience": "1-4 years",
+    "salary": "AED 1,500 - 2,000/month"
+  },
+  {
+    "id": 8,
+    "title": "Cleaner",
+    "company": "FreshSpace Solutions",
+    "location": "Singapore",
+    "domain": "Facility Management",
+    "type": "Full-time",
+    "experience": "0-2 years",
+    "salary": "SGD 1,300 - 1,800/month"
+  }
+]

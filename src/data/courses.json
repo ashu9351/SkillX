@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Basic Electrical Training",
+    "description": "Learn the fundamentals of electrical systems, wiring, and safety practices.",
+    "duration": "6 weeks",
+    "level": "Beginner"
+  },
+  {
+    "id": 2,
+    "title": "Plumbing Essentials",
+    "description": "Gain practical knowledge of plumbing tools, pipe systems, and installation techniques.",
+    "duration": "8 weeks",
+    "level": "Beginner"
+  },
+  {
+    "id": 3,
+    "title": "Welding Techniques and Safety",
+    "description": "Master basic welding processes including MIG, TIG, and ARC with safety training.",
+    "duration": "10 weeks",
+    "level": "Intermediate"
+  },
+  {
+    "id": 4,
+    "title": "Housekeeping & Facility Management",
+    "description": "Learn cleaning protocols, hygiene standards, and equipment handling for hotels and offices.",
+    "duration": "4 weeks",
+    "level": "All Levels"
+  },
+  {
+    "id": 5,
+    "title": "HVAC & AC Repair Training",
+    "description": "Understand refrigeration, air conditioning systems, and common maintenance techniques.",
+    "duration": "8 weeks",
+    "level": "Intermediate"
+  },
+  {
+    "id": 6,
+    "title": "Forklift Operation & Safety",
+    "description": "Hands-on training on forklift driving, warehouse safety, and material handling procedures.",
+    "duration": "3 weeks",
+    "level": "Beginner"
+  }
+]

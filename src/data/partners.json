@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "domain": "Technology Training",
+    "description": "Partner with us to provide cutting-edge technology training programs to your organization",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop",
+    "benefits": ["Custom curriculum", "Corporate training", "Certification programs"]
+  },
+  {
+    "id": 2,
+    "domain": "Recruitment Services",
+    "description": "Join our network of recruitment partners to connect top talent with leading companies",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+    "benefits": ["Commission structure", "Dedicated support", "Market insights"]
+  },
+  {
+    "id": 3,
+    "domain": "Educational Institutions",
+    "description": "Partner with educational institutions to enhance curriculum with industry-relevant skills",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+    "benefits": ["Curriculum integration", "Industry projects", "Placement support"]
+  },
+  {
+    "id": 4,
+    "domain": "Corporate Training",
+    "description": "Provide upskilling and reskilling solutions for corporate clients across industries",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+    "benefits": ["Custom programs", "On-site training", "Assessment tools"]
+  },
+  {
+    "id": 5,
+    "domain": "Startup Ecosystem",
+    "description": "Support startups with talent acquisition and skill development programs",
+    "image": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=300&fit=crop",
+    "benefits": ["Flexible programs", "Startup discounts", "Mentorship access"]
+  },
+  {
+    "id": 6,
+    "domain": "Government Projects",
+    "description": "Partner with government initiatives for skill development and employment programs",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+    "benefits": ["Large scale projects", "Government support", "Social impact"]
+  }
+] 
