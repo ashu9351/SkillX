@@ -20,8 +20,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <img src="/images/logo.png" width={50} height={50}/>
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu} aria-label="Home">
+          <img
+            src="/images/logo.png"
+            alt="Website Logo"
+            className="navbar-logo-img"
+          />
         </Link>
         
         <button 

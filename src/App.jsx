@@ -6,6 +6,7 @@ import Courses from './pages/Courses'
 import Jobs from './pages/Jobs'
 import Partner from './pages/Partner'
 import Contact from './pages/Contact'
+import CountrySelect from './pages/CountrySelect'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/courses" element={<Courses />} />
             <Route path="/jobs" element={<Jobs />} />
             <Route path="/partner" element={<Partner />} />
+            <Route path="/select-country" element={<CountrySelect />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

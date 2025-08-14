@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import { State, City } from 'country-state-city'
 
-const ContactForm = () => {
+const ContactForm = ({ country = '', showLocationFields = false }) => {
   const [searchParams] = useSearchParams()
   const [formData, setFormData] = useState({
     fullName: '',
@@ -10,6 +11,19 @@ const ContactForm = () => {
     query: searchParams.get('query') || 'Become Our Partner',
     description: ''
   })
+
+  const states = useMemo(() => {
+    const list = State.getStatesOfCountry('IN') || []
+    return [...list].sort((a, b) => a.name.localeCompare(b.name))
+  }, [])
+  const [selectedState, setSelectedState] = useState('') // isoCode
+  const selectedStateObj = useMemo(() => states.find(s => s.isoCode === selectedState) || null, [states, selectedState])
+  const sortedCities = useMemo(() => {
+    if (!selectedState) return []
+    const list = City.getCitiesOfState('IN', selectedState) || []
+    return [...list].sort((a, b) => a.name.localeCompare(b.name))
+  }, [selectedState])
+  const [selectedCity, setSelectedCity] = useState('')
 
   const handleChange = (field, value) => {
     setFormData(prev => ({
@@ -20,8 +34,14 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    const payload = {
+      ...formData,
+      country: showLocationFields ? 'India' : country,
+      state: showLocationFields ? (selectedStateObj?.name || '') : undefined,
+      city: showLocationFields ? selectedCity : undefined
+    }
     alert('Form submitted successfully!')
-    console.log('Form data:', formData)
+    console.log('Form data:', payload)
   }
 
   return (
@@ -44,7 +64,7 @@ const ContactForm = () => {
         <div className="form-group">
           <label htmlFor="phone">Phone Number *</label>
           <div className="phone-input-container">
-            <span>🇮🇳</span>
+            <span className="phone-prefix">IN</span>
             <input
               id="phone"
               type="tel"
@@ -67,6 +87,53 @@ const ContactForm = () => {
             required
           />
         </div>
+
+        {showLocationFields ? (
+          <>
+            <div className="form-group">
+              <label htmlFor="country">Country</label>
+              <input id="country" type="text" value="India" readOnly />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="state">State</label>
+              <select
+                id="state"
+                value={selectedState}
+                onChange={(e) => { setSelectedState(e.target.value); setSelectedCity('') }}
+                required
+              >
+                <option value="" disabled>Select State</option>
+                {states.map((st) => (
+                  <option key={st.isoCode} value={st.isoCode}>{st.name}</option>
+                ))}
+              </select>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="city">City</label>
+              <select
+                id="city"
+                value={selectedCity}
+                onChange={(e) => setSelectedCity(e.target.value)}
+                required
+                disabled={!selectedState}
+              >
+                <option value="" disabled>{selectedState ? 'Select City' : 'Select State first'}</option>
+                {sortedCities.map((ct) => (
+                  <option key={ct.name} value={ct.name}>{ct.name}</option>
+                ))}
+              </select>
+            </div>
+          </>
+        ) : (
+          country && (
+            <div className="form-group">
+              <label htmlFor="countryReadOnly">Country</label>
+              <input id="countryReadOnly" type="text" value={country} readOnly />
+            </div>
+          )
+        )}
 
         <div className="form-group">
           <label htmlFor="query">Query *</label>

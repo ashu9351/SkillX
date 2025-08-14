@@ -1,44 +1,67 @@
 [
   {
     "id": 1,
-    "title": "Basic Electrical Training",
-    "description": "Learn the fundamentals of electrical systems, wiring, and safety practices.",
-    "duration": "6 weeks",
-    "level": "Beginner"
+    "title": "Agriculture",
+    "fees": "₹51,000 + 18% GST",
+    "image": "/images/bg2.png",
+    "courses": [
+      "Livestock Farm Worker",
+      "Poultry Farm Worker",
+      "Crop and Horticulture Worker",
+      "Bee and Sericulture Worker",
+      "Fisheries and Aquaculture Worker",
+      "Irrigation and Agronomy Technician",
+      "Fertilizer and Pesticide Technician",
+      "Farm Machinery and Equipment Operator",
+      "Post‑Harvest Handling",
+      "General Farm Support"
+    ]
   },
   {
     "id": 2,
-    "title": "Plumbing Essentials",
-    "description": "Gain practical knowledge of plumbing tools, pipe systems, and installation techniques.",
-    "duration": "8 weeks",
-    "level": "Beginner"
+    "title": "Hospitality",
+    "fees": "₹52,000 + 18% GST",
+    "image": "/images/bg1.png",
+    "courses": [
+      "Food Production & Processing",
+      "Cooking & Kitchen Support",
+      "Skilled Food & Beverage Roles",
+      "Hospitality Frontline & Guest Interaction",
+      "Housekeeping & Facility Maintenance",
+      "Logistics & Warehouse Support",
+      "Security & Monitoring"
+    ]
   },
   {
     "id": 3,
-    "title": "Welding Techniques and Safety",
-    "description": "Master basic welding processes including MIG, TIG, and ARC with safety training.",
-    "duration": "10 weeks",
-    "level": "Intermediate"
+    "title": "Transport",
+    "fees": "₹55,000 + 18% GST",
+    "image": "/images/bg.png",
+    "courses": [
+      "Professional Vehicle Operators",
+      "Last‑Mile & Local Delivery",
+      "Industrial Equipment Operators",
+      "Picking, Packing & Sorting",
+      "Freight & Logistics Support",
+      "Workshop & Mechanical Support",
+      "Facility & Yard Maintenance",
+      "Cleaning & Sanitation Crew",
+      "General Warehouse Operations",
+      "Inventory & Stock Control"
+    ]
   },
   {
     "id": 4,
-    "title": "Housekeeping & Facility Management",
-    "description": "Learn cleaning protocols, hygiene standards, and equipment handling for hotels and offices.",
-    "duration": "4 weeks",
-    "level": "All Levels"
-  },
-  {
-    "id": 5,
-    "title": "HVAC & AC Repair Training",
-    "description": "Understand refrigeration, air conditioning systems, and common maintenance techniques.",
-    "duration": "8 weeks",
-    "level": "Intermediate"
-  },
-  {
-    "id": 6,
-    "title": "Forklift Operation & Safety",
-    "description": "Hands-on training on forklift driving, warehouse safety, and material handling procedures.",
-    "duration": "3 weeks",
-    "level": "Beginner"
+    "title": "Domestic",
+    "fees": "₹57,000 + 18% GST",
+    "image": "/images/bg1.png",
+    "courses": [
+      "Domestic & Personal Care Services",
+      "Property Maintenance & Technical Services",
+      "Cleaning & Sanitation Services",
+      "Outdoor, Grounds & Environmental Services",
+      "Transportation & Vehicle Services",
+      "Security & Waste Management Services"
+    ]
   }
 ]

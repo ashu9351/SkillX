@@ -30,7 +30,7 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="container">
+        <div className="hero-container">
           <h1>
             Unlock your doors to a foreign job
           </h1>
@@ -168,7 +168,7 @@ const Home = () => {
                 <div className="form-group">
                   <label htmlFor="phone">Phone Number *</label>
                   <div className="phone-input-container">
-                    <span>🇮🇳</span>
+                    <span className="phone-prefix">IN</span>
                     <input
                       id="phone"
                       type="tel"
