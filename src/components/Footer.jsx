@@ -3,9 +3,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
-          <div className="footer-section">
-            <h3>Website-Name</h3>
-          </div>
+        
           
           <div className="footer-section">
             <h3>Phone</h3>
@@ -14,19 +12,19 @@ const Footer = () => {
           
           <div className="footer-section">
             <h3>Email</h3>
-            <p>contact@website_name.com</p>
+            <p>contact@SkillEX Abroad.com</p>
           </div>
           
           <div className="footer-section">
             <h3>Location</h3>
-            <p>India, Jaipur</p>
+            <p>13B, behind nagar Palika new colony phulera, pin 303338</p>
           </div>
         </div>
         
         <div className="footer-divider"></div>
         
         <p className="footer-copyright">
-          © 2024 website_name. All rights reserved.
+          © 2024 SkillEX Abroad. All rights reserved.
         </p>
       </div>
     </footer>
