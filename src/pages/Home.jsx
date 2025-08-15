@@ -48,6 +48,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* <div class="scroll-container">
+         <div class="header">Get jobs in </div>
+         <div style="si">🇦🇺<div><p>Australia</p></div></div>
+      </div> */}
 
       {/* Services Grid */}
       <section className="container" style={{ padding: '4rem 0' }}>
