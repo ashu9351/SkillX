@@ -63,5 +63,17 @@
       "Transportation & Vehicle Services",
       "Security & Waste Management Services"
     ]
+  },
+  {
+    "id": 5,
+    "title": "Healthcare",
+    "fees": "₹60,000 + 18% GST",
+    "image": "/images/bg.png",
+    "courses": [
+      "Facilities & Operations",
+      "Sanitation & Environmental Services",
+      "Clinical Support & Equipment Handling",
+      "Patient & Care Support Services"
+    ]
   }
 ]

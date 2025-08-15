@@ -283,7 +283,12 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 12px;
   padding: 60px 12px;
-  
+}
+
+/* Course Items Grid - Fixed width for consistent card sizes */
+.services-grid.course-items {
+  grid-template-columns: repeat(auto-fill, 280px);
+  justify-content: center;
 }
 
 .card {
