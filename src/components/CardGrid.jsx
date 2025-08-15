@@ -6,74 +6,17 @@ const CardGrid = ({ items, type, onActionClick }) => {
       case 'courses':
         return (
           <div key={item.id} className="card">
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              height: '100%',
-              justifyContent: 'space-between'
-            }}>
-              <div>
-                <h3 style={{
-                  fontSize: '1.5rem',
-                  fontWeight: 'bold',
-                  marginBottom: '0.75rem',
-                  color: '#1e293b'
-                }}>
-                  {item.title}
-                </h3>
-                <p style={{
-                  color: '#6b7280',
-                  lineHeight: '1.6',
-                  marginBottom: '1rem'
-                }}>
-                  {item.description}
-                </p>
-                <div style={{
-                  display: 'flex',
-                  gap: '0.5rem',
-                  flexWrap: 'wrap',
-                  marginBottom: '1rem'
-                }}>
-                  <span style={{
-                    padding: '4px 8px',
-                    backgroundColor: '#dbeafe',
-                    color: '#1e40af',
-                    borderRadius: '4px',
-                    fontSize: '0.75rem',
-                    fontWeight: '500'
-                  }}>
-                    {item.level}
-                  </span>
-                  <span style={{
-                    padding: '4px 8px',
-                    backgroundColor: '#dcfce7',
-                    color: '#166534',
-                    borderRadius: '4px',
-                    fontSize: '0.75rem',
-                    fontWeight: '500'
-                  }}>
-                    {item.duration}
-                  </span>
-                </div>
+            <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+              <h3 style={{ fontSize: '1.05rem', fontWeight: 700, marginBottom: '0.5rem', color: '#1f2937', textAlign: 'left' }}>{item.title}</h3>
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '0.75rem', alignItems: 'center' }}>
+                {item.fees && (
+                  <span style={{ padding: '4px 8px', backgroundColor: '#fef3c7', color: '#92400e', borderRadius: '4px', fontSize: '0.75rem', fontWeight: '600' }}>Fees: {item.fees}</span>
+                )}
               </div>
-              <div style={{
-                display: 'flex',
-                justifyContent: 'center',
-                marginTop: 'auto'
-              }}>
-                <button 
+              <div style={{ marginTop: 'auto', display: 'flex', justifyContent: 'center' }}>
+                <button
                   onClick={() => onActionClick(`Course - ${item.title}`)}
-                  style={{
-                    padding: '8px 16px',
-                    backgroundColor: '#3b82f6',
-                    color: 'white',
-                    border: 'none',
-                    borderRadius: '6px',
-                    fontSize: '0.875rem',
-                    fontWeight: '600',
-                    cursor: 'pointer',
-                    transition: 'all 0.2s ease'
-                  }}
+                  style={{ padding: '8px 16px', backgroundColor: '#3b82f6', color: 'white', border: 'none', borderRadius: '6px', fontSize: '0.875rem', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease' }}
                 >
                   Buy Now
                 </button>
@@ -178,6 +121,31 @@ const CardGrid = ({ items, type, onActionClick }) => {
               >
                 Apply Now
               </button>
+            </div>
+          </div>
+        )
+
+      case 'courseItem':
+        return (
+          <div key={item.id} className="card">
+            <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+              <h3 style={{ fontSize: '1.05rem', fontWeight: 700, marginBottom: '0.5rem', color: '#1f2937', textAlign: 'left' }}>{item.title}</h3>
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '0.75rem', alignItems: 'center' }}>
+                {item.category && (
+                  <span style={{ padding: '4px 8px', backgroundColor: '#e0e7ff', color: '#3730a3', borderRadius: '4px', fontSize: '0.75rem', fontWeight: '500' }}>{item.category}</span>
+                )}
+                {item.fees && (
+                  <span style={{ padding: '4px 8px', backgroundColor: '#fef3c7', color: '#92400e', borderRadius: '4px', fontSize: '0.75rem', fontWeight: '600' }}>Fees: {item.fees}</span>
+                )}
+              </div>
+              <div style={{ marginTop: 'auto', display: 'flex', justifyContent: 'center' }}>
+                <button
+                  onClick={() => onActionClick(`Course - ${item.title}`)}
+                  style={{ padding: '8px 16px', backgroundColor: '#3b82f6', color: 'white', border: 'none', borderRadius: '6px', fontSize: '0.875rem', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease' }}
+                >
+                  Buy Now
+                </button>
+              </div>
             </div>
           </div>
         )

@@ -1,82 +1,89 @@
 [
-  {
-    "id": 1,
-    "title": "Construction Worker",
-    "company": "BuildWell Middle East",
-    "location": "Dubai, UAE",
-    "domain": "Construction",
-    "type": "Full-time",
-    "experience": "1-3 years",
-    "salary": "AED 1,200 - 1,800/month"
-  },
-  {
-    "id": 2,
-    "title": "Electrician",
-    "company": "Qatar Electra Co.",
-    "location": "Doha, Qatar",
-    "domain": "Electrical Maintenance",
-    "type": "Full-time",
-    "experience": "2-4 years",
-    "salary": "QAR 1,500 - 2,200/month"
-  },
-  {
-    "id": 3,
-    "title": "Plumber",
-    "company": "Saudi Plumbing Works",
-    "location": "Riyadh, Saudi Arabia",
-    "domain": "Plumbing Services",
-    "type": "Full-time",
-    "experience": "2-5 years",
-    "salary": "SAR 1,400 - 2,000/month"
-  },
-  {
-    "id": 4,
-    "title": "Welder",
-    "company": "Oman Metalcraft Ltd.",
-    "location": "Muscat, Oman",
-    "domain": "Fabrication & Welding",
-    "type": "Contract",
-    "experience": "3-6 years",
-    "salary": "OMR 180 - 250/month"
-  },
-  {
-    "id": 5,
-    "title": "Housekeeping Staff",
-    "company": "CleanStay Services",
-    "location": "Kuala Lumpur, Malaysia",
-    "domain": "Hospitality",
-    "type": "Full-time",
-    "experience": "1-2 years",
-    "salary": "MYR 1,300 - 1,800/month"
-  },
-  {
-    "id": 6,
-    "title": "Forklift Operator",
-    "company": "Jeddah Logistics Hub",
-    "location": "Jeddah, Saudi Arabia",
-    "domain": "Logistics & Warehouse",
-    "type": "Full-time",
-    "experience": "2-3 years",
-    "salary": "SAR 1,600 - 2,200/month"
-  },
-  {
-    "id": 7,
-    "title": "Security Guard",
-    "company": "SecureForce UAE",
-    "location": "Abu Dhabi, UAE",
-    "domain": "Security Services",
-    "type": "Full-time",
-    "experience": "1-4 years",
-    "salary": "AED 1,500 - 2,000/month"
-  },
-  {
-    "id": 8,
-    "title": "Cleaner",
-    "company": "FreshSpace Solutions",
-    "location": "Singapore",
-    "domain": "Facility Management",
-    "type": "Full-time",
-    "experience": "0-2 years",
-    "salary": "SGD 1,300 - 1,800/month"
-  }
+  { "id": 1, "title": "Construction Worker", "company": "BuildWell Middle East", "location": "Riyadh, Saudi Arabia", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "SAR 1,400 - 2,000/month" },
+  { "id": 2, "title": "Electrician", "company": "Saudi Electra Co.", "location": "Jeddah, Saudi Arabia", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "SAR 1,800 - 2,500/month" },
+  { "id": 3, "title": "Plumber", "company": "Saudi Plumbing Works", "location": "Dammam, Saudi Arabia", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "SAR 1,600 - 2,200/month" },
+
+  { "id": 4, "title": "Construction Worker", "company": "Gulf Builders LLC", "location": "Dubai, United Arab Emirates", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "AED 1,200 - 1,800/month" },
+  { "id": 5, "title": "Security Guard", "company": "SecureForce UAE", "location": "Abu Dhabi, United Arab Emirates", "domain": "Security Services", "type": "Full-time", "experience": "1-4 years", "salary": "AED 1,500 - 2,000/month" },
+  { "id": 6, "title": "Forklift Operator", "company": "Emirates Logistics", "location": "Sharjah, United Arab Emirates", "domain": "Logistics & Warehouse", "type": "Full-time", "experience": "2-3 years", "salary": "AED 1,800 - 2,400/month" },
+
+  { "id": 7, "title": "Electrician", "company": "Kuwait Electra Co.", "location": "Kuwait City, Kuwait", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "KWD 200 - 300/month" },
+  { "id": 8, "title": "Plumber", "company": "Kuwait Plumbing Works", "location": "Hawalli, Kuwait", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "KWD 180 - 280/month" },
+  { "id": 9, "title": "Welder", "company": "Kuwait Metalcraft Ltd.", "location": "Salmiya, Kuwait", "domain": "Fabrication & Welding", "type": "Contract", "experience": "3-6 years", "salary": "KWD 220 - 320/month" },
+
+  { "id": 10, "title": "Construction Worker", "company": "Qatar Builders", "location": "Doha, Qatar", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "QAR 1,500 - 2,200/month" },
+  { "id": 11, "title": "Electrician", "company": "Qatar Electra Co.", "location": "Al Wakrah, Qatar", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "QAR 1,800 - 2,500/month" },
+  { "id": 12, "title": "Plumber", "company": "Qatar Plumbing Works", "location": "Al Khor, Qatar", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "QAR 1,700 - 2,400/month" },
+
+  { "id": 13, "title": "Welder", "company": "Oman Metalcraft Ltd.", "location": "Muscat, Oman", "domain": "Fabrication & Welding", "type": "Contract", "experience": "3-6 years", "salary": "OMR 180 - 250/month" },
+  { "id": 14, "title": "Housekeeping Staff", "company": "Oman Clean Services", "location": "Sohar, Oman", "domain": "Hospitality", "type": "Full-time", "experience": "1-2 years", "salary": "OMR 120 - 180/month" },
+  { "id": 15, "title": "Forklift Operator", "company": "Oman Logistics Hub", "location": "Salalah, Oman", "domain": "Logistics & Warehouse", "type": "Full-time", "experience": "2-3 years", "salary": "OMR 160 - 220/month" },
+
+  { "id": 16, "title": "Security Guard", "company": "Bahrain SecureForce", "location": "Manama, Bahrain", "domain": "Security Services", "type": "Full-time", "experience": "1-4 years", "salary": "BHD 150 - 220/month" },
+  { "id": 17, "title": "Housekeeping Staff", "company": "Bahrain Clean Co.", "location": "Muharraq, Bahrain", "domain": "Hospitality", "type": "Full-time", "experience": "1-2 years", "salary": "BHD 130 - 200/month" },
+  { "id": 18, "title": "Plumber", "company": "Bahrain Plumbing Works", "location": "Riffa, Bahrain", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "BHD 160 - 240/month" },
+
+  { "id": 19, "title": "Construction Worker", "company": "Israel Builders", "location": "Tel Aviv, Israel", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "ILS 4,000 - 6,000/month" },
+  { "id": 20, "title": "Electrician", "company": "Israel Electra Co.", "location": "Jerusalem, Israel", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "ILS 4,500 - 6,500/month" },
+  { "id": 21, "title": "Plumber", "company": "Israel Plumbing Works", "location": "Haifa, Israel", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "ILS 4,200 - 6,200/month" },
+
+  { "id": 22, "title": "Construction Worker", "company": "Deutsche Bau GmbH", "location": "Berlin, Germany", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "€1,400 - 1,800/month" },
+  { "id": 23, "title": "Electrician", "company": "Munich Electra", "location": "Munich, Germany", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "€1,600 - 2,100/month" },
+  { "id": 24, "title": "Plumber", "company": "Frankfurt Plumbing GmbH", "location": "Frankfurt, Germany", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "€1,500 - 2,000/month" },
+
+  { "id": 25, "title": "Construction Worker", "company": "Nordic Build", "location": "Copenhagen, Denmark", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "DKK 12,000 - 18,000/month" },
+  { "id": 26, "title": "Electrician", "company": "Aarhus Electra", "location": "Aarhus, Denmark", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "DKK 14,000 - 20,000/month" },
+  { "id": 27, "title": "Plumber", "company": "Odense Plumbing", "location": "Odense, Denmark", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "DKK 13,000 - 19,000/month" },
+
+  { "id": 28, "title": "Construction Worker", "company": "UK Build Ltd.", "location": "London, United Kingdom", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "£1,200 - 1,800/month" },
+  { "id": 29, "title": "Electrician", "company": "Manchester Electrics", "location": "Manchester, United Kingdom", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "£1,400 - 2,000/month" },
+  { "id": 30, "title": "Plumber", "company": "Birmingham Plumbing Co.", "location": "Birmingham, United Kingdom", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "£1,300 - 1,900/month" },
+
+  { "id": 31, "title": "Construction Worker", "company": "Hungary Build", "location": "Budapest, Hungary", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "Ft 220,000 - 300,000/month" },
+  { "id": 32, "title": "Electrician", "company": "Debrecen Electrics", "location": "Debrecen, Hungary", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "Ft 250,000 - 340,000/month" },
+  { "id": 33, "title": "Plumber", "company": "Szeged Plumbing", "location": "Szeged, Hungary", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "Ft 230,000 - 320,000/month" },
+
+  { "id": 34, "title": "Construction Worker", "company": "Latvia Build", "location": "Riga, Latvia", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "€1,000 - 1,500/month" },
+  { "id": 35, "title": "Electrician", "company": "Daugavpils Electrics", "location": "Daugavpils, Latvia", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "€1,100 - 1,600/month" },
+  { "id": 36, "title": "Plumber", "company": "Liepaja Plumbing", "location": "Liepaja, Latvia", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "€1,050 - 1,550/month" },
+
+  { "id": 37, "title": "Construction Worker", "company": "Lux Build", "location": "Luxembourg City, Luxembourg", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "€1,800 - 2,400/month" },
+  { "id": 38, "title": "Electrician", "company": "Lux Electrics", "location": "Esch-sur-Alzette, Luxembourg", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "€2,000 - 2,600/month" },
+  { "id": 39, "title": "Plumber", "company": "Lux Plumbing", "location": "Differdange, Luxembourg", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "€1,900 - 2,500/month" },
+
+  { "id": 40, "title": "Construction Worker", "company": "FinBuild", "location": "Helsinki, Finland", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "€1,400 - 1,900/month" },
+  { "id": 41, "title": "Electrician", "company": "Espoo Electrics", "location": "Espoo, Finland", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "€1,600 - 2,100/month" },
+  { "id": 42, "title": "Plumber", "company": "Tampere Plumbing", "location": "Tampere, Finland", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "€1,500 - 2,000/month" },
+
+  { "id": 43, "title": "Construction Worker", "company": "SwedeBuild", "location": "Stockholm, Sweden", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "SEK 16,000 - 22,000/month" },
+  { "id": 44, "title": "Electrician", "company": "Gothenburg Electrics", "location": "Gothenburg, Sweden", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "SEK 18,000 - 24,000/month" },
+  { "id": 45, "title": "Plumber", "company": "Malmo Plumbing", "location": "Malmö, Sweden", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "SEK 17,000 - 23,000/month" },
+
+  { "id": 46, "title": "Construction Worker", "company": "LT Build", "location": "Vilnius, Lithuania", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "€1,000 - 1,400/month" },
+  { "id": 47, "title": "Electrician", "company": "Kaunas Electrics", "location": "Kaunas, Lithuania", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "€1,100 - 1,600/month" },
+  { "id": 48, "title": "Plumber", "company": "Klaipeda Plumbing", "location": "Klaipėda, Lithuania", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "€1,050 - 1,550/month" },
+
+  { "id": 49, "title": "Construction Worker", "company": "AT Build", "location": "Vienna, Austria", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "€1,400 - 1,900/month" },
+  { "id": 50, "title": "Electrician", "company": "Salzburg Electrics", "location": "Salzburg, Austria", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "€1,600 - 2,100/month" },
+  { "id": 51, "title": "Plumber", "company": "Graz Plumbing", "location": "Graz, Austria", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "€1,500 - 2,000/month" },
+
+  { "id": 52, "title": "Construction Worker", "company": "BG Build", "location": "Sofia, Bulgaria", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "BGN 1,100 - 1,600/month" },
+  { "id": 53, "title": "Electrician", "company": "Plovdiv Electrics", "location": "Plovdiv, Bulgaria", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "BGN 1,200 - 1,700/month" },
+  { "id": 54, "title": "Plumber", "company": "Varna Plumbing", "location": "Varna, Bulgaria", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "BGN 1,150 - 1,650/month" },
+
+  { "id": 55, "title": "Construction Worker", "company": "CZ Build", "location": "Prague, Czech Republic", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "CZK 22,000 - 30,000/month" },
+  { "id": 56, "title": "Electrician", "company": "Brno Electrics", "location": "Brno, Czech Republic", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "CZK 25,000 - 35,000/month" },
+  { "id": 57, "title": "Plumber", "company": "Ostrava Plumbing", "location": "Ostrava, Czech Republic", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "CZK 23,000 - 33,000/month" },
+
+  { "id": 58, "title": "Construction Worker", "company": "HR Build", "location": "Zagreb, Croatia", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "€1,100 - 1,600/month" },
+  { "id": 59, "title": "Electrician", "company": "Split Electrics", "location": "Split, Croatia", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "€1,200 - 1,700/month" },
+  { "id": 60, "title": "Plumber", "company": "Rijeka Plumbing", "location": "Rijeka, Croatia", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "€1,150 - 1,650/month" },
+
+  { "id": 61, "title": "Construction Worker", "company": "RO Build", "location": "Bucharest, Romania", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "RON 2,500 - 3,500/month" },
+  { "id": 62, "title": "Electrician", "company": "Cluj Electrics", "location": "Cluj-Napoca, Romania", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "RON 3,000 - 4,200/month" },
+  { "id": 63, "title": "Plumber", "company": "Timisoara Plumbing", "location": "Timisoara, Romania", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "RON 2,800 - 3,900/month" },
+
+  { "id": 64, "title": "Construction Worker", "company": "JP Build", "location": "Tokyo, Japan", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "¥200,000 - 260,000/month" },
+  { "id": 65, "title": "Electrician", "company": "Osaka Electrics", "location": "Osaka, Japan", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "¥220,000 - 300,000/month" },
+  { "id": 66, "title": "Plumber", "company": "Yokohama Plumbing", "location": "Yokohama, Japan", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "¥210,000 - 290,000/month" }
 ]
