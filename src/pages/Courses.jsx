@@ -75,7 +75,7 @@ const Courses = () => {
                   </div>
                 </AccordionTrigger>
               </AccordionHeader>
-              <AccordionContent>
+              <AccordionContent className="accordion-content">
                 <CardGrid
                   items={(cat.courses || []).map((title, idx) => ({
                     id: `${cat.id}-${idx}`,
