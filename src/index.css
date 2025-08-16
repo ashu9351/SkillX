@@ -449,7 +449,7 @@ body {
 
 .card-button {
   padding: 10px 20px;
-  background: #3b82f6;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
   color: white;
   border: none;
   border-radius: 6px;
@@ -464,7 +464,7 @@ body {
 }
 
 .card-button:hover {
-  background: #2563eb;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
   transform: translateY(-1px);
 }
 
@@ -803,4 +803,28 @@ body {
   .navbar {
     padding: 8px 0;
   }
+}
+.success-message {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: slideFadeIn 0.6s cubic-bezier(0.2, 0.6, 0.2, 1) 0.15s both;
+}
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.contact-success-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 16px;
 }
