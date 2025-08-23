@@ -3,7 +3,6 @@
     "id": 1,
     "title": "Agriculture",
     "fees": "₹51,000 + 18% GST",
-    "image": "/images/bg2.png",
     "courses": [
       "Livestock Farm Worker",
       "Poultry Farm Worker",
@@ -21,7 +20,6 @@
     "id": 2,
     "title": "Hospitality",
     "fees": "₹52,000 + 18% GST",
-    "image": "/images/bg1.png",
     "courses": [
       "Food Production & Processing",
       "Cooking & Kitchen Support",
@@ -36,7 +34,6 @@
     "id": 3,
     "title": "Transport",
     "fees": "₹55,000 + 18% GST",
-    "image": "/images/bg.png",
     "courses": [
       "Professional Vehicle Operators",
       "Last‑Mile & Local Delivery",
@@ -54,7 +51,6 @@
     "id": 4,
     "title": "Domestic",
     "fees": "₹57,000 + 18% GST",
-    "image": "/images/bg1.png",
     "courses": [
       "Domestic & Personal Care Services",
       "Property Maintenance & Technical Services",
@@ -68,7 +64,6 @@
     "id": 5,
     "title": "Healthcare",
     "fees": "₹60,000 + 18% GST",
-    "image": "/images/bg.png",
     "courses": [
       "Facilities & Operations",
       "Sanitation & Environmental Services",

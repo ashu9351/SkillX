@@ -7,12 +7,12 @@ const Footer = () => {
           
           <div className="footer-section">
             <h3>Phone</h3>
-            <p>+91 89558899XX</p>
+            <p>+91 7878506640</p>
           </div>
           
           <div className="footer-section">
             <h3>Email</h3>
-            <p>contact@SkillEX Abroad.com</p>
+            <p>skillexabroad@gmail.com</p>
           </div>
           
           <div className="footer-section">

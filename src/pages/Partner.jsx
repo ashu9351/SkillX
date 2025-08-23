@@ -1,10 +1,6 @@
-import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
 import ContactForm from '../components/ContactForm'
 
 const Partner = () => {
-  const navigate = useNavigate()
-
   return (
     <div className="container" style={{ padding: '2rem 0' }}>
       <div className="page-header">
