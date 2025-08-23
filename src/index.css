@@ -24,7 +24,7 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.20);
+  background: rgba(255, 255, 255, 0.2);
   z-index: -1;
   backdrop-filter: blur(1px);
 }
@@ -462,7 +462,7 @@ body::before {
 
 .card-button {
   padding: 10px 20px;
-  background: #3b82f6;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
   color: white;
   border: none;
   border-radius: 6px;
@@ -477,7 +477,7 @@ body::before {
 }
 
 .card-button:hover {
-  background: #2563eb;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
   transform: translateY(-1px);
 }
 
@@ -817,6 +817,30 @@ body::before {
     padding: 8px 0;
   }
 }
+.success-message {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: slideFadeIn 0.6s cubic-bezier(0.2, 0.6, 0.2, 1) 0.15s both;
+}
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.contact-success-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 16px;
+}
 
 /* Country Slider Section - Circle Based Slider */
 .country-section {
@@ -914,29 +938,29 @@ body::before {
     padding: clamp(15px, 3vw, 25px) 0;
     /* margin-bottom: 20px; */
   }
-  
+
   .country-circle-item {
     width: calc((100vw - 60px) / 3) !important;
     margin-right: 20px !important;
   }
-  
+
   .flag-circle {
     width: calc((100vw - 80px) / 3);
     height: calc((100vw - 80px) / 3);
     min-width: 70px;
     min-height: 70px;
   }
-  
+
   .country-name h3 {
     font-size: clamp(0.7rem, 2vw, 0.9rem);
     max-width: calc((100vw - 80px) / 3);
   }
-  
+
   /* Hide pagination dots on mobile */
   .country-slider-dots-bottom {
     display: none !important;
   }
-  
+
   /* Optimize heading for mobile */
   .country-slider-title {
     font-size: clamp(1.4rem, 5vw, 1.8rem);
@@ -944,7 +968,7 @@ body::before {
     padding: 0 15px;
     margin-bottom: 30px;
   }
-  
+
   .country-slider-header {
     margin-bottom: 30px;
   }
@@ -953,31 +977,30 @@ body::before {
 @media (max-width: 480px) {
   .country-section {
     padding: clamp(30px, 2.5vw, 20px) 0;
-    
   }
-  
+
   .country-circle-item {
     width: calc((100vw - 80px) / 3) !important;
     margin-right: 25px !important;
   }
-  
+
   .flag-circle {
     width: calc((100vw - 100px) / 3);
     height: calc((100vw - 100px) / 3);
     min-width: 60px;
     min-height: 60px;
   }
-  
+
   .country-name h3 {
     font-size: clamp(0.6rem, 1.8vw, 0.8rem);
     max-width: calc((100vw - 100px) / 3);
   }
-  
+
   /* Hide pagination dots on mobile */
   .country-slider-dots-bottom {
     display: none !important;
   }
-  
+
   /* Optimize heading for mobile */
   .country-slider-title {
     font-size: clamp(1.2rem, 4.5vw, 1.5rem);
@@ -985,7 +1008,7 @@ body::before {
     padding: 0 10px;
     margin-bottom: 25px;
   }
-  
+
   .country-slider-header {
     margin-bottom: 25px;
   }
@@ -996,29 +1019,29 @@ body::before {
     padding: clamp(8px, 2vw, 15px) 0;
     margin-bottom: 12px;
   }
-  
+
   .country-circle-item {
     width: calc((100vw - 48px) / 3) !important;
     margin-right: 16px !important;
   }
-  
+
   .flag-circle {
     width: calc((100vw - 64px) / 3);
     height: calc((100vw - 64px) / 3);
     min-width: 50px;
     min-height: 50px;
   }
-  
+
   .country-name h3 {
     font-size: clamp(0.5rem, 1.5vw, 0.75rem);
     max-width: calc((100vw - 64px) / 3);
   }
-  
+
   /* Hide pagination dots on mobile */
   .country-slider-dots-bottom {
     display: none !important;
   }
-  
+
   /* Optimize heading for mobile */
   .country-slider-title {
     font-size: clamp(1rem, 4vw, 1.3rem);
@@ -1026,7 +1049,7 @@ body::before {
     padding: 0 8px;
     margin-bottom: 20px;
   }
-  
+
   .country-slider-header {
     margin-bottom: 20px;
   }
@@ -1140,17 +1163,17 @@ body::before {
   .flag-circle:hover {
     transform: none;
   }
-  
+
   .dot:hover {
     transform: none;
   }
-  
+
   /* Better touch targets */
   .dot {
     min-width: 44px;
     min-height: 44px;
   }
-  
+
   .flag-circle {
     cursor: default;
   }
@@ -1161,25 +1184,25 @@ body::before {
   .country-section {
     padding: 15px 0;
   }
-  
+
   .country-slider-header {
     margin-bottom: 20px;
   }
-  
+
   .country-slider-title {
     font-size: 1.2rem;
   }
-  
+
   .flag-circle {
     width: 80px;
     height: 80px;
     margin-bottom: 8px;
   }
-  
+
   .country-name h3 {
     font-size: 0.75rem;
   }
-  
+
   .country-slider-dots-bottom {
     margin-top: 15px;
   }
@@ -1198,11 +1221,11 @@ body::before {
   .circles-stage {
     transition: none;
   }
-  
+
   .flag-circle {
     transition: none;
   }
-  
+
   .dot {
     transition: none;
   }
@@ -1213,19 +1236,19 @@ body::before {
   .country-slider-title {
     color: #000000;
   }
-  
+
   .country-name h3 {
     color: #060606;
   }
-  
+
   .dot {
     background: #64748b;
   }
-  
+
   .dot.active {
     background: #60a5fa;
   }
-  
+
   .dot:hover {
     background: #94a3b8;
   }
