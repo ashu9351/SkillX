@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { State, City } from "country-state-city";
 
-const ContactForm = ({ country = "", showLocationFields = false }) => {
+const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
   const [searchParams] = useSearchParams();
   const [formData, setFormData] = useState({
     fullName: "",
@@ -54,11 +54,13 @@ const ContactForm = ({ country = "", showLocationFields = false }) => {
       {!isSuccess ? (
         <>
           <h2>Contact Us</h2>
-          <form onSubmit={handleSubmit}>
+
+          <form action="https://formspree.io/f/manbzylo" method="POST">
             <div className="form-group">
               <label htmlFor="fullName">Full Name *</label>
               <input
                 id="fullName"
+                name="fullName"
                 type="text"
                 placeholder="Enter your full name"
                 value={formData.fullName}
@@ -73,8 +75,9 @@ const ContactForm = ({ country = "", showLocationFields = false }) => {
                 <span className="phone-prefix">IN</span>
                 <input
                   id="phone"
+                  name="phone"
                   type="tel"
-                  placeholder="+91 89558899XX"
+                  placeholder="+91 7878506640"
                   value={formData.phone}
                   onChange={(e) => handleChange("phone", e.target.value)}
                   required
@@ -86,6 +89,7 @@ const ContactForm = ({ country = "", showLocationFields = false }) => {
               <label htmlFor="email">Email ID *</label>
               <input
                 id="email"
+                name="email"
                 type="email"
                 placeholder="your.email@example.com"
                 value={formData.email}
@@ -98,13 +102,20 @@ const ContactForm = ({ country = "", showLocationFields = false }) => {
               <>
                 <div className="form-group">
                   <label htmlFor="country">Country</label>
-                  <input id="country" type="text" value="India" readOnly />
+                  <input
+                    id="country"
+                    name="country"
+                    type="text"
+                    value="India"
+                    readOnly
+                  />
                 </div>
 
                 <div className="form-group">
                   <label htmlFor="state">State</label>
                   <select
                     id="state"
+                    name="state"
                     value={selectedState}
                     onChange={(e) => {
                       setSelectedState(e.target.value);
@@ -127,6 +138,7 @@ const ContactForm = ({ country = "", showLocationFields = false }) => {
                   <label htmlFor="city">City</label>
                   <select
                     id="city"
+                    name="city"
                     value={selectedCity}
                     onChange={(e) => setSelectedCity(e.target.value)}
                     required
@@ -149,6 +161,7 @@ const ContactForm = ({ country = "", showLocationFields = false }) => {
                   <label htmlFor="countryReadOnly">Country</label>
                   <input
                     id="countryReadOnly"
+                    name="country"
                     type="text"
                     value={country}
                     readOnly
@@ -161,6 +174,7 @@ const ContactForm = ({ country = "", showLocationFields = false }) => {
               <label htmlFor="query">Query *</label>
               <input
                 id="query"
+                name="query"
                 type="text"
                 placeholder="What can we help you with?"
                 value={formData.query}
@@ -173,6 +187,7 @@ const ContactForm = ({ country = "", showLocationFields = false }) => {
               <label htmlFor="description">Description</label>
               <textarea
                 id="description"
+                name="description"
                 placeholder="Tell us more about your requirements..."
                 value={formData.description}
                 onChange={(e) => handleChange("description", e.target.value)}

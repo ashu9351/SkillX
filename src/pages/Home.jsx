@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ContactForm from "../components/ContactForm";
+import CountrySlider from "../components/CountrySlider";
 
 const Home = () => {
   const [showContactPopup, setShowContactPopup] = useState(false);
@@ -50,8 +51,11 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Country Slider Section */}
+      <CountrySlider />
+
       {/* Services Grid */}
-      <section className="container" style={{ padding: "4rem 0" }}>
+      <section className="container" style={{ padding: "0" }}>
         <div className="page-header">
           <h2 className="page-title">Our Services</h2>
         </div>
@@ -124,7 +128,7 @@ const Home = () => {
               backgroundColor: "white",
               borderRadius: "12px",
               padding: "2rem",
-              maxWidth: "500px",
+              maxWidth: "600px",
               width: "90%",
               maxHeight: "90vh",
               overflowY: "auto",
@@ -147,69 +151,10 @@ const Home = () => {
               ✕
             </button>
             <div style={{ marginTop: "1rem" }}>
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  alert("Form submitted successfully!");
-                  setShowContactPopup(false);
-                }}
-              >
-                <div className="form-group">
-                  <label htmlFor="fullName">Full Name *</label>
-                  <input
-                    id="fullName"
-                    type="text"
-                    placeholder="Enter your full name"
-                    required
-                  />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="phone">Phone Number *</label>
-                  <div className="phone-input-container">
-                    <span className="phone-prefix">IN</span>
-                    <input
-                      id="phone"
-                      type="tel"
-                      placeholder="+91 89558899XX"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="email">Email ID *</label>
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="your.email@example.com"
-                    required
-                  />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="query">Query *</label>
-                  <input
-                    id="query"
-                    type="text"
-                    placeholder="What can we help you with?"
-                    required
-                  />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="description">Description</label>
-                  <textarea
-                    id="description"
-                    placeholder="Tell us more about your requirements..."
-                    rows={4}
-                  />
-                </div>
-
-                <button type="submit" className="submit-button">
-                  Submit
-                </button>
-              </form>
+              <ContactForm 
+                showLocationFields={true} 
+                onClose={() => setShowContactPopup(false)}
+              />
             </div>
           </div>
         </div>
