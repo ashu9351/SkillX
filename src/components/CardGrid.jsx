@@ -125,7 +125,7 @@ const CardGrid = ({ items, type, onActionClick }) => {
           </div>
         )
 
-      case 'partners':
+      case 'courseItem':
         return (
           <div key={item.id} className="card">
             <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
