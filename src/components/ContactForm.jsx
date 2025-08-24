@@ -8,6 +8,7 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
     fullName: "",
     phone: "",
     email: "",
+    village: "",
     query: searchParams.get("query") || "Become Our Partner",
     description: "",
   });
@@ -153,6 +154,18 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
                       </option>
                     ))}
                   </select>
+                </div>
+                <div className="form-group">
+                  <label htmlFor="village">Village *</label>
+                  <input
+                    id="village"
+                    name="village"
+                    type="text"
+                    placeholder="Enter your village"
+                    value={formData.village}
+                    onChange={(e) => handleChange("village", e.target.value)}
+                    required
+                  />
                 </div>
               </>
             ) : (

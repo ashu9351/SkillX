@@ -35,7 +35,10 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-container">
-          <h1>Unlock your doors to a foreign job</h1>
+          <h1>
+            <span>Unlock your doors to a </span>
+            <span style={{ color: "#3b82f6" }}>Foreign Job</span>
+          </h1>
           <p>
             Learn, grow, and succeed with our comprehensive platform for skill
             development, Get Dream Job, and strategic partnerships.
@@ -151,8 +154,8 @@ const Home = () => {
               ✕
             </button>
             <div style={{ marginTop: "1rem" }}>
-              <ContactForm 
-                showLocationFields={true} 
+              <ContactForm
+                showLocationFields={true}
                 onClose={() => setShowContactPopup(false)}
               />
             </div>

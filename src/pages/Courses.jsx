@@ -80,7 +80,6 @@ const Courses = () => {
                   items={(cat.courses || []).map((title, idx) => ({
                     id: `${cat.id}-${idx}`,
                     title,
-                    category: cat.title,
                     fees: cat.fees,
                   }))}
                   type="courseItem"
