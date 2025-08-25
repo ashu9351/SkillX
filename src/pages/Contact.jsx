@@ -12,6 +12,24 @@ const Contact = () => {
 
   return (
     <div className="container" style={{ padding: '2rem 0' }}>
+      {/* Large Logo Section */}
+      <div style={{
+        textAlign: 'center',
+        marginBottom: '3rem'
+      }}>
+        <img 
+          src="/images/logo.png" 
+          alt="SkillEX Abroad Logo" 
+          className="logo-hover"
+          style={{
+            height: '120px',
+            width: 'auto',
+            maxWidth: '100%',
+            objectFit: 'contain'
+          }}
+        />
+      </div>
+
       <div className="page-header">
         <h1 className="page-title">
           Contact Us
@@ -24,7 +42,7 @@ const Contact = () => {
       {/* Contact form with location fields */}
       <div style={{ maxWidth: '600px', margin: '0 auto' }}>
         <ContactForm showLocationFields={true} />
-      </div>
+        </div>
     </div>
   )
 }

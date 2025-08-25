@@ -70,5 +70,38 @@
       "Clinical Support & Equipment Handling",
       "Patient & Care Support Services"
     ]
+  },
+  {
+    "id": 6,
+    "title": "Transport Training",
+    "fees": "₹62,000 + 18% GST",
+    "courses": [
+      "Professional Vehicle Operators",
+      "Last‑Mile & Local Delivery",
+      "Industrial Equipment Operators",
+      "Picking, Packing & Sorting",
+      "Freight & Logistics Support",
+      "Workshop & Mechanical Support",
+      "Facility & Yard Maintenance",
+      "Cleaning & Sanitation Crew",
+      "General Warehouse Operations",
+      "Inventory & Stock Control"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Automobile Training",
+    "fees": "₹72,000 + 18% GST",
+    "courses": [
+      "Vehicle Assembly & Production",
+      "Automotive Repair & Maintenance",
+      "Bee and Sericulture Worker",
+      "Auto Electrical & Electronics",
+      "Bodywork, Painting & Finishing",
+      "Machining, Welding & Fabrication",
+      "Quality Control & Inspection",
+      "Logistics, Material Handling & Support",
+      "Specialized Technicians"
+    ]
   }
 ]

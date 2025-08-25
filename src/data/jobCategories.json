@@ -1,0 +1,922 @@
+[
+  {
+    "id": 1,
+    "category": "Professional Vehicle Operators",
+    "jobs": [
+      "Truck Driver",
+      "Delivery Driver and Courier",
+      "Car Driver",
+      "Tanker Driver",
+      "Bus and Shuttle Driver",
+      "Taxi Driver",
+      "Forklift Operator",
+      "Reach Truck Operator",
+      "Pallet Jack Operator",
+      "Driver Helper",
+      "Other Vehicle Drivers"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Last-Mile & Local Delivery",
+    "jobs": [
+      "Delivery Driver and Courier",
+      "Car Driver",
+      "Driver Helper",
+      "Parcel Sorter",
+      "Dispatch Assistant",
+      "Order Filler",
+      "Returns Processor",
+      "Other Delivery boys"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Industrial Equipment Operators",
+    "jobs": [
+      "Forklift Operator",
+      "Reach Truck Operator",
+      "Pallet Jack Operator",
+      "Crane and Hoist Operator",
+      "Scanner Operator",
+      "Labelling Operator",
+      "Bagging Operator",
+      "Other Equipment Operators"
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Picking, Packing & Sorting",
+    "jobs": [
+      "Picker and Packer",
+      "Picker",
+      "Packer",
+      "Packing Assistant",
+      "Order Filler",
+      "Warehouse Sorter",
+      "Sorting Facility Worker",
+      "Parcel Sorter",
+      "Returns Processor",
+      "Labelling Operator",
+      "Bagging Operator"
+    ]
+  },
+  {
+    "id": 5,
+    "category": "Freight & Logistics Support",
+    "jobs": [
+      "Freight Handler",
+      "Dock Worker",
+      "Loader and Unloader",
+      "Material Handler",
+      "Cargo Handler",
+      "Shipping Clerk",
+      "Receiving Clerk",
+      "Load Checker",
+      "Logistics Assistant",
+      "Distribution Associate",
+      "Dispatch Assistant"
+    ]
+  },
+  {
+    "id": 6,
+    "category": "Workshop & Mechanical Support",
+    "jobs": [
+      "Mechanic Workshop Helper",
+      "Crate Builder",
+      "Handyman and Yard Worker",
+      "Warehouse Technician"
+    ]
+  },
+  {
+    "id": 7,
+    "category": "Facility & Yard Maintenance",
+    "jobs": [
+      "Warehouse Maintenance Worker",
+      "Handyman and Yard Worker",
+      "Goods Receiver",
+      "Load Checker",
+      "Warehouse Support Staff"
+    ]
+  },
+  {
+    "id": 8,
+    "category": "Cleaning & Sanitation Crew",
+    "jobs": [
+      "Cleaning Staff",
+      "Warehouse Cleaner",
+      "Cleaning workers"
+    ]
+  },
+  {
+    "id": 9,
+    "category": "General Warehouse Operations",
+    "jobs": [
+      "Warehouse Associate",
+      "Warehouse Assistant",
+      "Warehouse Labourer",
+      "Warehouse Operative",
+      "Warehouse Support Staff",
+      "Distribution Associate",
+      "Scanner Operator"
+    ]
+  },
+  {
+    "id": 10,
+    "category": "Inventory & Stock Control",
+    "jobs": [
+      "Inventory Assistant",
+      "Inventory Clerk",
+      "Inventory Associate",
+      "Stocker",
+      "Stock Controller",
+      "Bin Stocker",
+      "Goods Receiver"
+    ]
+  },
+  {
+    "id": 11,
+    "category": "Food Production & Processing",
+    "jobs": [
+      "Food Production Worker",
+      "Packaging Operator",
+      "Machine Operator",
+      "Butcher",
+      "Baker",
+      "Brewer",
+      "Distillery Operator",
+      "Dairy Plant Worker",
+      "Quality Control Technician",
+      "Food Assembler",
+      "Meat Cutter",
+      "Sanitation Cleaner",
+      "Mixing Operator",
+      "Oven Operator",
+      "Freezer Operator",
+      "Conveyor Belt Operator",
+      "Grinder Operator",
+      "Dough Mixer",
+      "Batch Maker",
+      "Cold Storage Technician",
+      "Food Sorter",
+      "Roasting Machine Operator",
+      "Slicer Operator",
+      "Packing Assistant",
+      "Food Sampler",
+      "Raw Material Handler",
+      "Beverage Processor",
+      "Pasteurizer Operator",
+      "Steaming Operator",
+      "Fryer Operator",
+      "Sauce Maker",
+      "Production Helper",
+      "QA Line Inspector",
+      "Utility Operator",
+      "Waste Collector",
+      "Ice Cream Maker",
+      "Flavouring Technician",
+      "Other food processing workers"
+    ]
+  },
+  {
+    "id": 12,
+    "category": "Cooking & Kitchen Support",
+    "jobs": [
+      "Line Cook",
+      "Prep Cook",
+      "Line Cooks and Prep Cooks",
+      "Kitchen Helper",
+      "Dishwasher",
+      "Dishwashers and Kitchen Porters",
+      "Other kitchen staff"
+    ]
+  },
+  {
+    "id": 13,
+    "category": "Skilled Food & Beverage Roles",
+    "jobs": [
+      "Bartender and Barbacks",
+      "Butchers and Meat Cutters",
+      "Sauce Maker",
+      "Baker",
+      "Brewer",
+      "Beverage Processor",
+      "Pasteurizer Operator"
+    ]
+  },
+  {
+    "id": 14,
+    "category": "Hospitality Front-line & Guest Interaction",
+    "jobs": [
+      "Waiter and Food Runner",
+      "Busboys and Bussers",
+      "Bellhops and Porters",
+      "Valet Parking Attendants",
+      "Doormen and Door Attendants",
+      "Spa Attendants and Pool Attendants",
+      "Catering Assistants",
+      "Banquet Crew",
+      "Other hospitality frontline workers"
+    ]
+  },
+  {
+    "id": 15,
+    "category": "Housekeeping & Facility Maintenance",
+    "jobs": [
+      "Housekeeping Staff",
+      "Maintenance Technicians and Handymen",
+      "Hotel Janitors and Cleaners",
+      "Laundry Attendants",
+      "Room Attendants",
+      "Cleaning Technician",
+      "Groundskeepers",
+      "Gardeners"
+    ]
+  },
+  {
+    "id": 16,
+    "category": "Logistics & Warehouse Support",
+    "jobs": [
+      "Forklift Operator",
+      "Warehouse Assistant",
+      "Palletizer Operator",
+      "Labeling Operator",
+      "Bottling Line Operator",
+      "Canning Machine Operator",
+      "Filling Machine Operator",
+      "Inventory Handler",
+      "Delivery Drivers",
+      "Bus and Car Drivers"
+    ]
+  },
+  {
+    "id": 17,
+    "category": "Security & Monitoring",
+    "jobs": [
+      "Security Guards",
+      "Security head",
+      "Other Security staff"
+    ]
+  },
+  {
+    "id": 18,
+    "category": "Multi-Functional Roles & Support",
+    "jobs": [
+      "Food Sampler",
+      "Production Helper",
+      "QA Line Inspector",
+      "Utility Operator",
+      "Waste Collector",
+      "Kitchen Helper",
+      "Cleaning Technician",
+      "Mixing Operator",
+      "Batch Maker",
+      "Conveyor Belt Operator",
+      "Cold Storage Technician",
+      "Raw Material Handler",
+      "Other Support staff"
+    ]
+  },
+  {
+    "id": 19,
+    "category": "Facilities & Operations",
+    "jobs": [
+      "Hospital Maintenance Technician",
+      "HVAC and Electrical and Plumber",
+      "Medical Gas Technician",
+      "Hospital Cook",
+      "Dietary Assistant",
+      "Kitchen Assistant"
+    ]
+  },
+  {
+    "id": 20,
+    "category": "Sanitation & Environmental Services",
+    "jobs": [
+      "Hospital Housekeeper",
+      "EVS Technician",
+      "Terminal Cleaner",
+      "Laundry Attendants",
+      "Biohazard Waste Handler"
+    ]
+  },
+  {
+    "id": 21,
+    "category": "Clinical Support & Equipment Handling",
+    "jobs": [
+      "Biomedical Equipment Technician",
+      "Medical Supply Handler",
+      "Medical Courier",
+      "Sterile Processing Technician",
+      "Central Service Tech",
+      "Electrocardiogram Technicians",
+      "Endoscopy Assistant",
+      "Operating Room Technician",
+      "Pharmacy Assistants",
+      "Lab Assistant",
+      "Specimen Collector and Processor",
+      "Phlebotomist"
+    ]
+  },
+  {
+    "id": 22,
+    "category": "Patient & Care Support Services",
+    "jobs": [
+      "Nurse and Caregiver",
+      "Nursing Assistant",
+      "Patient Care Technician",
+      "Personal Home Care Assistant",
+      "Patient Transporter",
+      "Ambulance Driver",
+      "Hospital Porter"
+    ]
+  },
+  {
+    "id": 23,
+    "category": "Domestic & Personal Care Services",
+    "jobs": [
+      "Housekeeper",
+      "Nanny",
+      "Butler",
+      "Cook",
+      "Maids",
+      "Caregiver",
+      "Chef",
+      "Carer",
+      "Couples",
+      "Drivers",
+      "Estate Manager",
+      "Health aides",
+      "Chambermaid",
+      "Domestic worker",
+      "Footman",
+      "Housemaid",
+      "Laundress",
+      "Personal Assistant",
+      "Worker",
+      "Pet Sitter",
+      "Chauffeur",
+      "Other domestic workers"
+    ]
+  },
+  {
+    "id": 24,
+    "category": "Property Maintenance & Technical Services",
+    "jobs": [
+      "Building Maintenance Technician",
+      "Elevator Maintenance Technician",
+      "HVAC Maintenance Technician",
+      "Electrical Maintenance Technician",
+      "Plumber",
+      "Boiler Operator",
+      "Maintenance Helper",
+      "Facilities Technician",
+      "Building Maintenance Helper",
+      "Other technical service workers"
+    ]
+  },
+  {
+    "id": 25,
+    "category": "Cleaning & Sanitation Services",
+    "jobs": [
+      "Janitor and Custodian",
+      "Commercial Cleaner",
+      "Housekeeper",
+      "Window Cleaner",
+      "Carpet Cleaner",
+      "Pressure Washer Operator",
+      "Industrial Cleaner",
+      "Mold Remediation Technician",
+      "Graffiti Removal Technician",
+      "Chimney Sweep",
+      "Laundry Attendant",
+      "Floor Technician",
+      "Restroom Attendant",
+      "Janitor and Cleaner",
+      "Dishwasher",
+      "Laundromat Attendant",
+      "Car Wash Attendant",
+      "Other cleaning staff"
+    ]
+  },
+  {
+    "id": 26,
+    "category": "Outdoor, Grounds & Environmental Services",
+    "jobs": [
+      "Groundskeeper",
+      "Pest Control Technician",
+      "Pool Maintenance Technician",
+      "Grounds Maintenance Worker",
+      "Gardener",
+      "Street Sweeper",
+      "Road Maintenance Labourer",
+      "Other outdoor workers"
+    ]
+  },
+  {
+    "id": 27,
+    "category": "Transportation & Vehicle Services",
+    "jobs": [
+      "Car Washer",
+      "Delivery Helper",
+      "Mover and Furniture Mover",
+      "Petroleum Station Attendant",
+      "Drivers",
+      "Chauffeur",
+      "Paper Delivery Worker",
+      "Other vehicle drivers"
+    ]
+  },
+  {
+    "id": 28,
+    "category": "Security & Waste Management Services",
+    "jobs": [
+      "Waste Collector",
+      "Recycling Collector",
+      "Garbage Collector",
+      "Recycling Sorter",
+      "Security Guard",
+      "Security staff",
+      "Bridge and Tunnel Toll Collector",
+      "Other security staff"
+    ]
+  },
+  {
+    "id": 29,
+    "category": "Heavy Equipment & Machine Operators",
+    "jobs": [
+      "Excavator",
+      "Bulldozer",
+      "Truck Driver",
+      "Crane Operator",
+      "Forklift",
+      "Backhoe",
+      "Paver",
+      "Tower Crane",
+      "Wheel Loader",
+      "Other Heavy Equipment and Machine Operator"
+    ]
+  },
+  {
+    "id": 30,
+    "category": "Construction & General Trades",
+    "jobs": [
+      "Plumber",
+      "Electrician",
+      "Carpenter",
+      "Painter",
+      "Drywall Installer",
+      "Glazier",
+      "Wood House Construction Worker",
+      "Mason",
+      "Scaffolder",
+      "Concrete Worker",
+      "Bridge Construction Worker",
+      "Asphalt",
+      "Road Construction Worker",
+      "Cement Based Worker",
+      "Foreman / Crew Leader",
+      "Site Safety Technician",
+      "Building Construction Worker",
+      "Material Handler",
+      "Tile Setter",
+      "Demolition Worker",
+      "Other Construction Workers"
+    ]
+  },
+  {
+    "id": 31,
+    "category": "HVAC, Mechanical & Fire Safety",
+    "jobs": [
+      "HVAC Technician",
+      "Gas Fitter",
+      "Fireproofing Installer",
+      "Lift",
+      "Elevator Technician",
+      "Low Voltage Electrician",
+      "BMS Technician",
+      "Other Mechanical Construction Worker"
+    ]
+  },
+  {
+    "id": 32,
+    "category": "Specialized Energy & Utility Jobs",
+    "jobs": [
+      "Solar Panel Technician",
+      "EV Charger Installer",
+      "Green Roof Installer",
+      "Water Treatment Plant Technician"
+    ]
+  },
+  {
+    "id": 33,
+    "category": "Infrastructure & Industrial Work",
+    "jobs": [
+      "Rail Construction Worker",
+      "Tunnel Construction Worker",
+      "Prefab Module Assembler",
+      "Other Heavy Infrastructure Workers"
+    ]
+  },
+  {
+    "id": 34,
+    "category": "Insulation & Environmental Control",
+    "jobs": [
+      "Soundproofing Installer",
+      "Fireproofing Installer",
+      "Green Building Materials Installer",
+      "Other Insulation Worker"
+    ]
+  },
+  {
+    "id": 35,
+    "category": "Industrial Equipment & Machinery Maintenance",
+    "jobs": [
+      "Heavy Equipment Mechanic",
+      "Diesel Mechanic",
+      "Hydraulics Technician",
+      "Pneumatics Specialist",
+      "Machinery Maintenance Technician",
+      "Plant Maintenance Technician",
+      "Industrial Electrician",
+      "Millwright",
+      "Mechanical Fitter",
+      "Structural Fitter",
+      "Field Service Technician",
+      "Tool Repair Technician",
+      "Installation Technician",
+      "Lubrication Technician",
+      "Other Industrial Equipment and Machinery Maintenance Workers"
+    ]
+  },
+  {
+    "id": 36,
+    "category": "Electrical, Low Voltage & Power Systems",
+    "jobs": [
+      "Electrician",
+      "Low Voltage Electrician (Data, CCTV, Fire Alarms)",
+      "Lineman",
+      "Cable Jointer",
+      "Electrical Technician",
+      "Instrumentation Technician",
+      "Electrical Tester",
+      "Rewinding Technician",
+      "Maintenance Electrician",
+      "AV Technician",
+      "EV Charger Installer",
+      "Solar Inverter Technician",
+      "Other Electrical and Electronics Workers"
+    ]
+  },
+  {
+    "id": 37,
+    "category": "Manufacturing, Assembly & Fabrication",
+    "jobs": [
+      "Welder",
+      "Fabricator",
+      "CNC Technician",
+      "Machinist",
+      "Heavy Equipment Assembler",
+      "Tool and Die Maker",
+      "Foundry Worker",
+      "Press Technician",
+      "Coating & Painting Technician",
+      "Casting Technician",
+      "Parts & Inventory Handler",
+      "Warehouse Technician",
+      "Other Manufacturing, Assembly & Fabrication Workers"
+    ]
+  },
+  {
+    "id": 38,
+    "category": "Electronics & Precision Assembly",
+    "jobs": [
+      "Electronics Technician",
+      "PCB Assembler",
+      "SMT Operator",
+      "Soldering Technician",
+      "Wiring Harness Assembler",
+      "Electromechanical Assembler",
+      "Cleanroom Technician",
+      "Microscope Assembly Operator",
+      "Electronic Device Tester",
+      "Other Electronics Workers"
+    ]
+  },
+  {
+    "id": 39,
+    "category": "Vehicle Assembly & Production",
+    "jobs": [
+      "Car Production Worker",
+      "Two Wheeler Production Assembler",
+      "Heavy Equipment Assembler",
+      "Electric Vehicle Assembler",
+      "Assembly Line Worker",
+      "Trucks and Buses Assembly Line Worker",
+      "Engine Assembler",
+      "Transmission Technician",
+      "Chassis Assembler",
+      "Parts Assembler",
+      "Gearbox Technician",
+      "Suspension Technician",
+      "Radiator Technician",
+      "Exhaust Fitter",
+      "Bumper Assembler",
+      "Vehicle Fitter",
+      "Other Assembly Line Workers"
+    ]
+  },
+  {
+    "id": 40,
+    "category": "Automotive Repair & Maintenance",
+    "jobs": [
+      "Auto Mechanic",
+      "Car Mechanic",
+      "Automotive Technician",
+      "Two-Wheeler Auto Mechanic",
+      "Trucks and Buses Mechanic",
+      "Brake Technician",
+      "Tire Technician",
+      "Maintenance Technician",
+      "Alignment Technician",
+      "Other Automobile Maintenance Workers"
+    ]
+  },
+  {
+    "id": 41,
+    "category": "Bee and Sericulture Worker",
+    "jobs": [
+      "Bee Farming Worker",
+      "Sericulture (Silkworm) Worker",
+      "Hive Cleaner",
+      "Honey Extractor Assistant",
+      "Silkworm Feeder",
+      "Queen Breeder",
+      "Mulberry Leaf Cutter",
+      "Tray Cleaner",
+      "Cocoon Sorter",
+      "Honey Packer",
+      "Other Bee and Sericulture Workers"
+    ]
+  },
+  {
+    "id": 42,
+    "category": "Auto Electrical & Electronics",
+    "jobs": [
+      "Auto Electrician",
+      "Battery Technician",
+      "Other Automobile Electrical & Electronics Technicians"
+    ]
+  },
+  {
+    "id": 43,
+    "category": "Bodywork, Painting & Finishing",
+    "jobs": [
+      "Vehicle Painter",
+      "Denting Technician",
+      "Paint Booth Operator",
+      "Paint Prepper",
+      "Auto Glass Installer",
+      "Interior Trimmer",
+      "Upholstery Technician",
+      "Panel Beater",
+      "Body Shop Technician",
+      "Car Washer",
+      "Other Automobile Paint Workers"
+    ]
+  },
+  {
+    "id": 44,
+    "category": "Machining, Welding & Fabrication",
+    "jobs": [
+      "CNC Operator",
+      "Welder",
+      "Fabricator",
+      "Tool and Die Maker",
+      "Machine Operator",
+      "Other Fabricators"
+    ]
+  },
+  {
+    "id": 45,
+    "category": "Quality Control & Inspection",
+    "jobs": [
+      "Quality Inspector",
+      "Auto Tester",
+      "Pre-Delivery Inspection Technician"
+    ]
+  },
+  {
+    "id": 46,
+    "category": "Logistics, Material Handling & Support",
+    "jobs": [
+      "Forklift Operator",
+      "Logistics Handler",
+      "Warehouse Assistant"
+    ]
+  },
+  {
+    "id": 47,
+    "category": "Specialized Technicians",
+    "jobs": [
+      "Alignment Technician",
+      "Upholstery Technician",
+      "Gearbox Technician",
+      "Other Automobile Technicians"
+    ]
+  },
+  {
+    "id": 48,
+    "category": "Livestock Farm Worker",
+    "jobs": [
+      "Dairy Farm Worker",
+      "Sheep and Goat Farm Worker",
+      "Camel Farm Worker",
+      "Pig Farm Worker",
+      "Cattle Feeder",
+      "Milking Assistant",
+      "Calf Rearing Assistant",
+      "Barn Cleaner",
+      "Animal Health Worker",
+      "Manure Handler",
+      "Other Livestock Farm Workers"
+    ]
+  },
+  {
+    "id": 49,
+    "category": "Poultry Farm Worker",
+    "jobs": [
+      "Poultry Farm Worker",
+      "Egg Collector",
+      "Broiler Feeder",
+      "Poultry Vaccination Assistant",
+      "Hatchery Assistant",
+      "Poultry Waste Handler",
+      "Feed Mixer",
+      "Chick Grader",
+      "Poultry Shed Cleaner",
+      "Poultry Farm Loader",
+      "Other Poultry Farm Workers"
+    ]
+  },
+  {
+    "id": 50,
+    "category": "Crop and Horticulture Worker",
+    "jobs": [
+      "Crop Worker",
+      "Fruits and Vegetable Farm Worker",
+      "Greenhouse Worker",
+      "Plant Nursery Technician",
+      "Floriculture Farm Worker",
+      "Jute Farm Worker",
+      "Field Harvester",
+      "Weeding Staff",
+      "Crop Sprayer",
+      "Seedling Transplanter",
+      "Other Crop and Horticulture Workers"
+    ]
+  },
+  {
+    "id": 51,
+    "category": "Fisheries and Aquaculture Worker",
+    "jobs": [
+      "Fisheries and Aquacultural Worker",
+      "Fish Processing Plant Worker",
+      "Fish Feeder",
+      "Hatchery Assistant",
+      "Tank Cleaner",
+      "Fish Grader",
+      "Fish Cutter",
+      "Net Cleaner",
+      "Packaging Operator",
+      "Water Quality Tester",
+      "Other Fisheries and Aquaculture Worker"
+    ]
+  },
+  {
+    "id": 52,
+    "category": "Irrigation and Agronomy Technician",
+    "jobs": [
+      "Irrigation Technician",
+      "Agronomists",
+      "Pump Operator",
+      "Pipe Installer",
+      "Soil Analyst",
+      "Sprinkler Adjuster",
+      "Water Flow Monitor",
+      "Irrigation Scheduler",
+      "Field Surveyor",
+      "Drip System Technician",
+      "Other Irrigation and Agronomy Technician"
+    ]
+  },
+  {
+    "id": 53,
+    "category": "Fertilizer and Pesticide Technician",
+    "jobs": [
+      "Fertilizer & Pesticide Applicator",
+      "Spray Machine Operator",
+      "Mixing Assistant",
+      "Safety Gear Handler",
+      "Application Planner",
+      "Storage Handler",
+      "Chemical Loader",
+      "Measuring Technician",
+      "Area Marker",
+      "Record Keeper",
+      "Other Fertilizer and Pesticide Technician"
+    ]
+  },
+  {
+    "id": 54,
+    "category": "Farm Machinery and Equipment Operator",
+    "jobs": [
+      "Farm Equipment and Machine Operator",
+      "Tractor Driver",
+      "Plough Operator",
+      "Seeder Operator",
+      "Sprayer Driver",
+      "Harvester Driver",
+      "Maintenance Technician",
+      "Fuel Filler",
+      "GPS Operator",
+      "Loader Assistant",
+      "Other Farm Machinery and Equipment Operator"
+    ]
+  },
+  {
+    "id": 55,
+    "category": "Post-Harvest Handling",
+    "jobs": [
+      "Cold Storage Assistant",
+      "Weighing & Packing Staff",
+      "Scale Operator",
+      "Packaging Worker",
+      "Sorting Assistant",
+      "Packing Line Worker",
+      "Labeling Assistant",
+      "Stacking Worker",
+      "Final Inspector",
+      "Freezer Room Handler",
+      "Other Post-Harvest Handling Staff"
+    ]
+  },
+  {
+    "id": 56,
+    "category": "General Farm Support",
+    "jobs": [
+      "Vermicompost Worker",
+      "Mushroom Cultivation Worker",
+      "Compost Mixer",
+      "Worm Feeder",
+      "Bedding Preparer",
+      "Humidity Monitor",
+      "Harvesting Assistant",
+      "Cleaning Staff",
+      "Sieving Assistant",
+      "Odor Controller",
+      "Other General Farm Workers"
+    ]
+  },
+  {
+    "id": 57,
+    "category": "Unskilled",
+    "jobs": [
+      "Construction Workers",
+      "Farmworkers",
+      "Cleaners & Sweepers",
+      "Delivery Workers",
+      "Drivers",
+      "Security Guards",
+      "Warehouse Worker",
+      "Janitor and Cleaner",
+      "Garbage Collector",
+      "Delivery Helper",
+      "Farm Laborer",
+      "Grounds Maintenance Worker",
+      "Mover and Furniture Mover",
+      "Dishwasher",
+      "Laundromat Attendant",
+      "Parking Lot Attendant",
+      "Car Wash Attendant",
+      "Fast Food Worker",
+      "Retail Stock Associate",
+      "Recycling Sorter",
+      "Construction Site Helper",
+      "Manual Packager",
+      "Street Sweeper",
+      "Kitchen Assistant and Busser",
+      "Petroleum Station Attendant",
+      "Road Maintenance Laborer",
+      "Security Guard",
+      "Building Maintenance Helper",
+      "Porter",
+      "Window Cleaner",
+      "Paper Delivery Worker",
+      "Industrial Cleaner",
+      "Food Processing Line Worker",
+      "Bridge and Tunnel Toll Collector",
+      "Temporary Day Laborer"
+    ]
+  }
+]
