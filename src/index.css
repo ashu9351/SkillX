@@ -411,6 +411,14 @@ body::before {
   }
 }
 
+.services-grid-home {
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr !important;
+    margin: auto;
+    width: 70%;
+  }
+}
+
 /* Desktop/Laptop (768px+) - exactly 3 cards per row */
 @media (min-width: 768px) {
   .services-grid {
@@ -1768,4 +1776,42 @@ body::before {
   font-size: 1rem;
   color: #1e293b;
   font-weight: 600;
+}
+
+.text-desciption-list {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #374151;
+  line-height: 1.6;
+  text-align: left;
+}
+.partner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.partner-form-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 12px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.partner-form-description-wrapper .partner-form-description {
+  margin: 0 auto 2rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  @media (min-width: 768px) {
+    max-width: 60%;
+  }
 }

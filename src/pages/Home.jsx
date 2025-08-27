@@ -10,21 +10,21 @@ const Home = () => {
     {
       title: "Acquire Skills",
       description:
-        "Master in-demand skills with our comprehensive certification programs and expert-led courses. Get internationally recognized certifications for USA, EU, and UAE compliance. Training includes OSHA, EPA, and multi-regional standards for global employment opportunities.",
+        "SkillEX Abroad helps blue-collar and white-collar, Professional, especially janitorial and domestic workers, obtain globally recognised certifications. These certifications are specifically tailored to meet international job market standards, increasing chances of employment abroad.",
       icon: "🎓",
       link: "/courses",
     },
     {
       title: "Get Dream Job",
       description:
-        "Find your dream job with leading companies across 92+ countries. Access international employment opportunities with competitive salaries and global career growth.",
+        "SkillEX Abroad acts as a gateway for blue-collar and white-collar, workers and Professional to access high-paying job opportunities abroad through industry-specific certification and training, candidates are prepared to meet global job market demands.",
       icon: "💼",
       link: "/jobs",
     },
     {
       title: "Grow with Us",
       description:
-        "Join our network of partners and grow your business with our platform.",
+        'SkillEX Abroad is launching an empowering new policy called "Grow with Us", designed to build a nationwide partner network. This initiative opens doors for motivated individuals from any city in the country to collaborate with us and become official partners in our mission to transform the lives of blue-collar and white-collar job seekers.',
       icon: "🤝",
       link: "/partner",
     },
@@ -1231,7 +1231,7 @@ const Home = () => {
         <div className="page-header">
           <h2 className="page-title">Our Services</h2>
         </div>
-        <div className="services-grid">
+        <div className="services-grid services-grid-home">
           {services.map((service, index) => (
             <div key={index} className="card">
               <div className="card-icon">{service.icon}</div>
