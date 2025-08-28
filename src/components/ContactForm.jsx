@@ -1,6 +1,7 @@
-import { useMemo, useState } from "react";
+import { useMemo, useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { State, City } from "country-state-city";
+import jobCategoriesData from "../data/jobCategories.json";
 
 const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
   const [searchParams] = useSearchParams();
@@ -13,6 +14,21 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
     description: "",
   });
   const [isSuccess, setIsSuccess] = useState(false);
+
+  // Job-related state
+  const [selectedJobCategory, setSelectedJobCategory] = useState(
+    searchParams.get("jobCategory") || ""
+  );
+
+  const [selectedSpecificJob, setSelectedSpecificJob] = useState("");
+
+  const source = searchParams.get("source");
+  const isJobApplication = source === "jobs";
+  const isCourseEnquiry = searchParams
+    .get("query")
+    ?.toLowerCase()
+    .includes("course");
+  console.log(isCourseEnquiry);
 
   const states = useMemo(() => {
     const list = State.getStatesOfCountry("IN") || [];
@@ -44,6 +60,12 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
       country: showLocationFields ? "India" : country,
       state: showLocationFields ? selectedStateObj?.name || "" : undefined,
       city: showLocationFields ? selectedCity : undefined,
+      // Add job information for job applications
+      ...(isJobApplication && {
+        jobCategory: selectedJobCategory,
+        specificJob: selectedSpecificJob,
+        source: "job-application",
+      }),
     };
     alert("Form submitted successfully!");
     setIsSuccess(true);
@@ -54,9 +76,25 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
     <div className="contact-form-container">
       {!isSuccess ? (
         <>
-          <h2>Contact Us</h2>
+          <h2>{isJobApplication ? "Job Application Form" : "Contact Us"}</h2>
 
           <form action="https://formspree.io/f/manbzylo" method="POST">
+            {/* Hidden inputs for job information */}
+            {isJobApplication && (
+              <>
+                <input
+                  type="hidden"
+                  name="jobCategory"
+                  value={selectedJobCategory}
+                />
+                <input
+                  type="hidden"
+                  name="specificJob"
+                  value={selectedSpecificJob}
+                />
+                <input type="hidden" name="source" value="job-application" />
+              </>
+            )}
             <div className="form-group">
               <label htmlFor="fullName">Full Name *</label>
               <input
@@ -183,25 +221,98 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
               )
             )}
 
+            {/* Job Category and Specific Job Fields for Job Applications */}
+            {isJobApplication && (
+              <>
+                <div className="form-group">
+                  <label htmlFor="jobCategory">Job Category *</label>
+                  <select
+                    id="jobCategory"
+                    name="jobCategory"
+                    value={selectedJobCategory}
+                    onChange={(e) => {
+                      setSelectedJobCategory(e.target.value);
+                      setSelectedSpecificJob(""); // Reset specific job when category changes
+                    }}
+                    required
+                  >
+                    <option value="" disabled>
+                      Select Job Category
+                    </option>
+                    {jobCategoriesData
+                      .sort((a, b) => a.category.localeCompare(b.category))
+                      .map((category) => (
+                        <option key={category.id} value={category.category}>
+                          {category.category}
+                        </option>
+                      ))}
+                  </select>
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="specificJob">Job Profile *</label>
+                  <select
+                    id="specificJob"
+                    name="specificJob"
+                    value={selectedSpecificJob} // Ensure value is set on page load
+                    onChange={(e) => setSelectedSpecificJob(e.target.value)}
+                    required
+                    disabled={!selectedJobCategory}
+                  >
+                    <option value="" disabled>
+                      {selectedJobCategory
+                        ? "Select Specific Job"
+                        : "Select Job Category first"}
+                    </option>
+                    {selectedJobCategory &&
+                      jobCategoriesData
+                        .find((cat) => cat.category === selectedJobCategory)
+                        ?.jobs.map((job, index) => (
+                          <option key={index} value={job}>
+                            {job}
+                          </option>
+                        ))}
+                  </select>
+                </div>
+              </>
+            )}
+
             <div className="form-group">
               <label htmlFor="query">Query *</label>
               <input
                 id="query"
                 name="query"
                 type="text"
-                placeholder="What can we help you with?"
-                value={formData.query}
+                placeholder={
+                  isJobApplication
+                    ? "Job application details"
+                    : "What can we help you with?"
+                }
+                value={
+                  isJobApplication
+                    ? `Job Application - ${selectedJobCategory}${
+                        selectedSpecificJob ? ` - ${selectedSpecificJob}` : ""
+                      }`
+                    : formData.query
+                }
                 onChange={(e) => handleChange("query", e.target.value)}
                 required
+                readOnly={isJobApplication}
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="description">Description</label>
+              <label htmlFor="description">
+                {isJobApplication ? "Additional Information" : "Description"}
+              </label>
               <textarea
                 id="description"
                 name="description"
-                placeholder="Tell us more about your requirements..."
+                placeholder={
+                  isJobApplication
+                    ? "Tell us about your experience, skills, and why you're interested in this position..."
+                    : "Tell us more about your requirements..."
+                }
                 value={formData.description}
                 onChange={(e) => handleChange("description", e.target.value)}
                 rows={4}
@@ -209,17 +320,19 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
             </div>
 
             <button type="submit" className="submit-button">
-              Submit
+              {isJobApplication ? "Submit Job Application" : "Submit"}
             </button>
           </form>
         </>
       ) : (
         <>
           <p className="success-message">
-            Thank you for your message! Our team will reach out to you soon.
+            {isJobApplication
+              ? "Thank you for your job application! Our recruitment team will review your application and contact you soon."
+              : "Thank you for your message! Our team will reach out to you soon."}
           </p>
           <button
-            class="contact-success-btn"
+            className="contact-success-btn"
             onClick={() => (window.location.href = "/")}
           >
             Back to Home
