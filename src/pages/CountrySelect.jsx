@@ -103,6 +103,7 @@ const CountrySelect = () => {
   const [searchParams] = useSearchParams();
   const query = searchParams.get("query") || "";
   const next = searchParams.get("next") || "";
+  const country = searchParams.get("country");
 
   const SORTED_COUNTRIES = useMemo(
     () =>
@@ -117,6 +118,7 @@ const CountrySelect = () => {
   const [listMaxHeight, setListMaxHeight] = useState(360);
 
   useEffect(() => {
+    if (country) setSelectedCountry(country);
     const updateHeight = () => {
       // Approximate responsive heights for better UX
       if (window.innerWidth <= 480) setListMaxHeight(260);
@@ -126,7 +128,7 @@ const CountrySelect = () => {
     updateHeight();
     window.addEventListener("resize", updateHeight);
     return () => window.removeEventListener("resize", updateHeight);
-  }, []);
+  }, [country]);
 
   const handleNext = (e) => {
     e.preventDefault();

@@ -66,7 +66,8 @@ const JobCategories = () => {
       country: selectedCountry,
       source: "jobs",
     });
-    window.location.href = `/contact?${params.toString()}`;
+    window.location.href = `/jobs?${params.toString()}`;
+    //window.location.href = `/contact?${params.toString()}`;
   };
 
   return (

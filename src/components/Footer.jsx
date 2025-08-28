@@ -1,18 +1,102 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const countries = [
-    'Algeria', 'Argentina', 'Armenia', 'Aruba', 'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Barbados',
-    'Belgium', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Cambodia', 'Canada', 'Chile', 'China', 'Costa Rica',
-    'Croatia', 'Cyprus', 'Czech Republic', 'Denmark', 'Dominican Republic', 'Egypt', 'Equatorial Guinea', 'Estonia', 'Fiji', 'Finland',
-    'France', 'Gabon', 'Germany', 'Greece', 'Guyana', 'Hong Kong', 'Hungary', 'Iceland', 'India', 'Indonesia',
-    'Iran', 'Ireland', 'Israel', 'Italy', 'Japan', 'Kazakhstan', 'Kuwait', 'Latvia', 'Libya', 'Lithuania',
-    'Luxembourg', 'Macau', 'Malaysia', 'Malta', 'Maldives', 'Mauritius', 'Mexico', 'Namibia', 'Nauru', 'Netherlands',
-    'New Zealand', 'Norway', 'Oman', 'Palau', 'Panama', 'Peru', 'Philippines', 'Poland', 'Portugal', 'Puerto Rico',
-    'Qatar', 'Romania', 'Russia', 'Saint Lucia', 'Saudi Arabia', 'Serbia', 'Seychelles', 'Singapore', 'Slovakia', 'Slovenia',
-    'South Africa', 'South Korea', 'Spain', 'Sweden', 'Switzerland', 'Taiwan', 'Thailand', 'Turkey', 'Tuvalu', 'UAE',
-    'UK', 'Uruguay', 'USA', 'Vietnam'
-  ]
+    "Algeria",
+    "Argentina",
+    "Armenia",
+    "Aruba",
+    "Australia",
+    "Austria",
+    "Azerbaijan",
+    "Bahamas",
+    "Bahrain",
+    "Barbados",
+    "Belgium",
+    "Botswana",
+    "Brazil",
+    "Brunei",
+    "Bulgaria",
+    "Cambodia",
+    "Canada",
+    "Chile",
+    "China",
+    "Costa Rica",
+    "Croatia",
+    "Cyprus",
+    "Czech Republic",
+    "Denmark",
+    "Dominican Republic",
+    "Egypt",
+    "Equatorial Guinea",
+    "Estonia",
+    "Fiji",
+    "Finland",
+    "France",
+    "Gabon",
+    "Germany",
+    "Greece",
+    "Guyana",
+    "Hong Kong",
+    "Hungary",
+    "Iceland",
+    "India",
+    "Indonesia",
+    "Iran",
+    "Ireland",
+    "Israel",
+    "Italy",
+    "Japan",
+    "Kazakhstan",
+    "Kuwait",
+    "Latvia",
+    "Libya",
+    "Lithuania",
+    "Luxembourg",
+    "Macau",
+    "Malaysia",
+    "Malta",
+    "Maldives",
+    "Mauritius",
+    "Mexico",
+    "Namibia",
+    "Nauru",
+    "Netherlands",
+    "New Zealand",
+    "Norway",
+    "Oman",
+    "Palau",
+    "Panama",
+    "Peru",
+    "Philippines",
+    "Poland",
+    "Portugal",
+    "Puerto Rico",
+    "Qatar",
+    "Romania",
+    "Russia",
+    "Saint Lucia",
+    "Saudi Arabia",
+    "Serbia",
+    "Seychelles",
+    "Singapore",
+    "Slovakia",
+    "Slovenia",
+    "South Africa",
+    "South Korea",
+    "Spain",
+    "Sweden",
+    "Switzerland",
+    "Taiwan",
+    "Thailand",
+    "Turkey",
+    "Tuvalu",
+    "UAE",
+    "UK",
+    "Uruguay",
+    "USA",
+    "Vietnam",
+  ];
 
   return (
     <footer className="footer">
@@ -81,17 +165,19 @@ const Footer = () => {
             {countries.map((country) => (
               <Link
                 key={country}
-                to={`/jobs?country=${encodeURIComponent(country)}`}
+                to={`/select-country?country=${encodeURIComponent(
+                  country
+                )}&next=jobs`}
                 className="country-link"
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 style={{
-                  color: 'white',
-                  textDecoration: 'none',
-                  fontSize: '0.9rem',
-                  transition: 'color 0.2s ease'
+                  color: "white",
+                  textDecoration: "none",
+                  fontSize: "0.9rem",
+                  transition: "color 0.2s ease",
                 }}
-                onMouseEnter={(e) => e.target.style.color = '#3b82f6'}
-                onMouseLeave={(e) => e.target.style.color = 'white'}
+                onMouseEnter={(e) => (e.target.style.color = "#3b82f6")}
+                onMouseLeave={(e) => (e.target.style.color = "white")}
               >
                 {country}
               </Link>

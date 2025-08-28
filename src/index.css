@@ -1777,7 +1777,7 @@ body::before {
 }
 
 .icon-card-icon {
-  font-size: 15vh;
+  font-size: 10vh;
   color: rgb(59, 130, 246);
 }
 
@@ -1825,6 +1825,6 @@ body::before {
   }
 }
 .category-icon {
-  font-size: 15vh;
+  font-size: 10vh;
   color: rgb(59, 130, 246);
 }
