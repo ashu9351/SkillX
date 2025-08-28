@@ -14,12 +14,19 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
     description: "",
   });
   const [isSuccess, setIsSuccess] = useState(false);
-  
+
   // Job-related state
-  const [selectedJobCategory, setSelectedJobCategory] = useState(searchParams.get("jobCategory") || "");
+  const [selectedJobCategory, setSelectedJobCategory] = useState(
+    searchParams.get("jobCategory") || ""
+  );
   const [selectedSpecificJob, setSelectedSpecificJob] = useState("");
   const source = searchParams.get("source");
   const isJobApplication = source === "jobs";
+  const isCourseEnquiry = searchParams
+    .get("query")
+    ?.toLowerCase()
+    .includes("course");
+  console.log(isCourseEnquiry);
 
   const states = useMemo(() => {
     const list = State.getStatesOfCountry("IN") || [];
@@ -55,8 +62,8 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
       ...(isJobApplication && {
         jobCategory: selectedJobCategory,
         specificJob: selectedSpecificJob,
-        source: "job-application"
-      })
+        source: "job-application",
+      }),
     };
     alert("Form submitted successfully!");
     setIsSuccess(true);
@@ -73,8 +80,16 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
             {/* Hidden inputs for job information */}
             {isJobApplication && (
               <>
-                <input type="hidden" name="jobCategory" value={selectedJobCategory} />
-                <input type="hidden" name="specificJob" value={selectedSpecificJob} />
+                <input
+                  type="hidden"
+                  name="jobCategory"
+                  value={selectedJobCategory}
+                />
+                <input
+                  type="hidden"
+                  name="specificJob"
+                  value={selectedSpecificJob}
+                />
                 <input type="hidden" name="source" value="job-application" />
               </>
             )}
@@ -222,16 +237,18 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
                     <option value="" disabled>
                       Select Job Category
                     </option>
-                    {jobCategoriesData.map((category) => (
-                      <option key={category.id} value={category.category}>
-                        {category.category}
-                      </option>
-                    ))}
+                    {jobCategoriesData
+                      .sort((a, b) => a.category.localeCompare(b.category))
+                      .map((category) => (
+                        <option key={category.id} value={category.category}>
+                          {category.category}
+                        </option>
+                      ))}
                   </select>
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="specificJob">Specific Job Position *</label>
+                  <label htmlFor="specificJob">Job Profile *</label>
                   <select
                     id="specificJob"
                     name="specificJob"
@@ -241,17 +258,18 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
                     disabled={!selectedJobCategory}
                   >
                     <option value="" disabled>
-                      {selectedJobCategory ? "Select Specific Job" : "Select Job Category first"}
+                      {selectedJobCategory
+                        ? "Select Specific Job"
+                        : "Select Job Category first"}
                     </option>
-                    {selectedJobCategory && 
+                    {selectedJobCategory &&
                       jobCategoriesData
-                        .find(cat => cat.category === selectedJobCategory)
+                        .find((cat) => cat.category === selectedJobCategory)
                         ?.jobs.map((job, index) => (
                           <option key={index} value={job}>
                             {job}
                           </option>
-                        ))
-                    }
+                        ))}
                   </select>
                 </div>
               </>
@@ -263,8 +281,18 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
                 id="query"
                 name="query"
                 type="text"
-                placeholder={isJobApplication ? "Job application details" : "What can we help you with?"}
-                value={isJobApplication ? `Job Application - ${selectedJobCategory}${selectedSpecificJob ? ` - ${selectedSpecificJob}` : ''}` : formData.query}
+                placeholder={
+                  isJobApplication
+                    ? "Job application details"
+                    : "What can we help you with?"
+                }
+                value={
+                  isJobApplication
+                    ? `Job Application - ${selectedJobCategory}${
+                        selectedSpecificJob ? ` - ${selectedSpecificJob}` : ""
+                      }`
+                    : formData.query
+                }
                 onChange={(e) => handleChange("query", e.target.value)}
                 required
                 readOnly={isJobApplication}
@@ -272,11 +300,17 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="description">{isJobApplication ? "Additional Information" : "Description"}</label>
+              <label htmlFor="description">
+                {isJobApplication ? "Additional Information" : "Description"}
+              </label>
               <textarea
                 id="description"
                 name="description"
-                placeholder={isJobApplication ? "Tell us about your experience, skills, and why you're interested in this position..." : "Tell us more about your requirements..."}
+                placeholder={
+                  isJobApplication
+                    ? "Tell us about your experience, skills, and why you're interested in this position..."
+                    : "Tell us more about your requirements..."
+                }
                 value={formData.description}
                 onChange={(e) => handleChange("description", e.target.value)}
                 rows={4}
@@ -291,10 +325,9 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
       ) : (
         <>
           <p className="success-message">
-            {isJobApplication 
-              ? "Thank you for your job application! Our recruitment team will review your application and contact you soon." 
-              : "Thank you for your message! Our team will reach out to you soon."
-            }
+            {isJobApplication
+              ? "Thank you for your job application! Our recruitment team will review your application and contact you soon."
+              : "Thank you for your message! Our team will reach out to you soon."}
           </p>
           <button
             className="contact-success-btn"

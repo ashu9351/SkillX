@@ -1331,11 +1331,12 @@ body::before {
 /* Job Categories Page Styling */
 .job-categories-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 0;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* responsive columns */
+  gap: 1.5rem;
+  align-items: stretch; /* ensures all cards in a row have equal height */
 }
 
 .job-categories-grid > div {
@@ -1347,6 +1348,14 @@ body::before {
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: center;
+
+  /* Flex layout for content stacking */
+  display: flex;
+  flex-direction: column;
+}
+
+.job-categories-grid > div > :last-child {
+  margin-top: auto; /* pushes the last element (e.g. button/footer) to the bottom */
 }
 
 .job-categories-grid > div:hover {
@@ -1769,7 +1778,7 @@ body::before {
 
 .icon-card-icon {
   font-size: 15vh;
-  color: #1e40af;
+  color: rgb(59, 130, 246);
 }
 
 .icon-card-text {
@@ -1814,4 +1823,8 @@ body::before {
   @media (min-width: 768px) {
     max-width: 60%;
   }
+}
+.category-icon {
+  font-size: 15vh;
+  color: rgb(59, 130, 246);
 }

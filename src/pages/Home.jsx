@@ -289,7 +289,7 @@ const Home = () => {
               className="illustration-text-head-pill"
               style={{ margin: "auto", marginBottom: "2rem" }}
             >
-              Why Skillx?
+              Why SkillEx?
               <span style={{ fontSize: "1rem" }}>→</span>
             </div>
 
@@ -303,7 +303,7 @@ const Home = () => {
                 lineHeight: "1.2",
               }}
             >
-              Why Skillx?
+              Why SkillEx?
             </h2>
             <div className="icon-card-container">
               <div className="icon-card">
