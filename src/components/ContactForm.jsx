@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { State, City } from "country-state-city";
 import jobCategoriesData from "../data/jobCategories.json";
@@ -19,7 +19,9 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
   const [selectedJobCategory, setSelectedJobCategory] = useState(
     searchParams.get("jobCategory") || ""
   );
+
   const [selectedSpecificJob, setSelectedSpecificJob] = useState("");
+
   const source = searchParams.get("source");
   const isJobApplication = source === "jobs";
   const isCourseEnquiry = searchParams
@@ -252,7 +254,7 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
                   <select
                     id="specificJob"
                     name="specificJob"
-                    value={selectedSpecificJob}
+                    value={selectedSpecificJob} // Ensure value is set on page load
                     onChange={(e) => setSelectedSpecificJob(e.target.value)}
                     required
                     disabled={!selectedJobCategory}

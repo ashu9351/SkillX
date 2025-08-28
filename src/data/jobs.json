@@ -538,5 +538,25 @@
     "type": "Contract",
     "experience": "5-7 years",
     "salary": "KWD 1,885 - KWD 2,340/month"
+  },
+  {
+    "id": 55,
+    "title": "Drivers",
+    "company": "SilverLine Labs",
+    "location": "Kuwait",
+    "domain": "Unskilled Workers",
+    "type": "Contract",
+    "experience": "5-7 years",
+    "salary": "KWD 1,885 - KWD 2,340/month"
+  },
+  {
+    "id": 56,
+    "title": "Farmworkers",
+    "company": "Farm Labs",
+    "location": "China",
+    "domain": "Unskilled Workers",
+    "type": "Contract",
+    "experience": "5-7 years",
+    "salary": "CNY 1,885 - CNY 2,340/month"
   }
 ]

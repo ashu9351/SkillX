@@ -118,7 +118,11 @@ const CountrySelect = () => {
   const [listMaxHeight, setListMaxHeight] = useState(360);
 
   useEffect(() => {
-    if (country) setSelectedCountry(country);
+    if (country) {
+      //special case when job search is from footer then url will have country
+      setSelectedCountry(country);
+      handleNext(country);
+    }
     const updateHeight = () => {
       // Approximate responsive heights for better UX
       if (window.innerWidth <= 480) setListMaxHeight(260);
@@ -130,10 +134,9 @@ const CountrySelect = () => {
     return () => window.removeEventListener("resize", updateHeight);
   }, [country]);
 
-  const handleNext = (e) => {
-    e.preventDefault();
+  const handleNext = (country) => {
     const params = new URLSearchParams();
-    if (selectedCountry) params.set("country", selectedCountry);
+    if (country) params.set("country", country);
     if (query) params.set("query", query);
 
     if (next === "jobs") {
@@ -491,72 +494,52 @@ const CountrySelect = () => {
       <p className="page-subtitle" style={{ textAlign: "center" }}>
         Select your preferred country to proceed with the application
       </p>
-      <form
-        onSubmit={handleNext}
-        className="contact-form-container"
-        style={{ maxWidth: 520 }}
-      >
+      <form className="country-options-container">
         <div className="form-group">
-          <label htmlFor="country-list">Country *</label>
           <div
             id="country-list"
             role="listbox"
             aria-label="Country list"
             style={{
-              border: "2px solid #e5e7eb",
-              borderRadius: 12,
-              overflow: "hidden",
               background: "white",
+              padding: "12px",
             }}
           >
-            <div
-              style={{
-                maxHeight: listMaxHeight,
-                overflowY: "auto",
-              }}
-            >
-              {SORTED_COUNTRIES.map((c) => {
-                const isSelected = selectedCountry === c;
-                return (
-                  <button
-                    key={c}
-                    type="button"
-                    role="option"
-                    aria-selected={isSelected}
-                    onClick={() => setSelectedCountry(c)}
-                    style={{
-                      width: "100%",
-                      textAlign: "left",
-                      padding: "12px 16px",
-                      border: "none",
-                      borderBottom: "1px solid #f1f5f9",
-                      background: isSelected ? "#eff6ff" : "white",
-                      color: "#1f2937",
-                      cursor: "pointer",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <span style={{ pointerEvents: "none" }}>{c}</span>
-                    {isSelected && (
-                      <span
-                        style={{
-                          color: "#3b82f6",
-                          fontWeight: 700,
-                        }}
-                      >
-                        ✓
-                      </span>
-                    )}
-                  </button>
-                );
-              })}
+            <div>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+                  gap: "12px",
+                }}
+              >
+                {SORTED_COUNTRIES.map((country) => {
+                  const selected = selectedCountry === country;
+                  return (
+                    <button
+                      key={country}
+                      type="button"
+                      onClick={() => handleNext(country)} // same callback you used with <select>
+                      style={{
+                        padding: "10px 12px",
+                        borderRadius: "10px",
+                        border: `2px solid rgb(59, 130, 246)`,
+                        background: selected
+                          ? "rgb(59, 130, 246)"
+                          : "transparent",
+                        color: selected ? "#fff" : "rgb(59, 130, 246)",
+                        fontWeight: 600,
+                        cursor: "pointer",
+                        transition: "background .2s, color .2s",
+                      }}
+                    >
+                      {country}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
-          <small style={{ color: "#6b7280" }}>
-            Scroll to see more countries
-          </small>
         </div>
 
         <button type="submit" className="submit-button">
