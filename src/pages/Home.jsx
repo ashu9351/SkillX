@@ -82,10 +82,13 @@ const Home = () => {
                 }}
               >
                 The SkillEX Abroad Training & Certification Programme is built
-                on 200,000+ hours of specialised curriculum and delivered by
-                1,000+ certified and experienced trainers. Job seekers gain
-                theoretical knowledge and training in workplace safety,
-                operational standards, and technical protocols.
+                on extensive, industry-focused curriculum and delivered by a
+                dedicated team of highly qualified trainers. It equips aspiring
+                professionals with a balanced mix of practical skills and
+                theoretical knowledge, covering critical areas such as workplace
+                safety, global operational practices, and essential technical
+                protocols. The programme is designed to prepare candidates for
+                international opportunities with confidence and competence.
               </p>
               <div className="illustration-text-bullets">
                 <div className="illustration-text-bullet">
@@ -96,8 +99,8 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="illustration-text-bullet-text">
-                    Globally recognised standards aligned to employer
-                    expectations
+                    Training aligned with globally recognised industry standards
+                    and employer needs
                   </div>
                 </div>
 
@@ -109,7 +112,8 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="illustration-text-bullet-text">
-                    Role-based modules, assessments, and verifiable certificates
+                    Comprehensive role-based modules, assessments, and
+                    verifiable certifications
                   </div>
                 </div>
                 <div className="illustration-text-bullet">
@@ -120,7 +124,8 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="illustration-text-bullet-text">
-                    Fast-track job readiness for placements abroad
+                    Accelerated pathways to job readiness for overseas
+                    placements
                   </div>
                 </div>
                 <div className="illustration-text-bullet">
@@ -131,7 +136,8 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="illustration-text-bullet-text">
-                    Job documentation guidance and interview prep
+                    End-to-end support with documentation and interview
+                    preparation
                   </div>
                 </div>
               </div>
@@ -220,10 +226,11 @@ const Home = () => {
                   marginBottom: "2rem",
                 }}
               >
-                SkillEX Abroad is a modern job marketplace where companies,
-                recruiters, manpower suppliers, agents, and employers post roles
-                while job seekers match with openings that fit their
-                qualifications, skills and certifications.
+                SkillEX Abroad is a next-generation employment platform that
+                connects global employers, recruiters, and manpower partners
+                with qualified talent. It enables organizations to post
+                opportunities while helping job seekers discover roles that
+                align with their skills, experience, and certifications.
               </p>
 
               <hr />
@@ -232,7 +239,7 @@ const Home = () => {
                 <div className="illustration-text-card">
                   <div className="illustration-text-card-icon">👥</div>
                   <div className="illustration-text-card-text">
-                    700+ Recruitment Partners And 400+ Direct Employers
+                    Great Recruitment Partners And Trusted Direct Employers
                   </div>
                 </div>
                 <div className="illustration-text-card">
@@ -244,10 +251,11 @@ const Home = () => {
               </div>
               <div className="illustration-text-description">
                 <p>
-                  Coverage across Finance, Banking, Insurance, Consulting, IT,
-                  Telecom, Design, Engineering, Manufacturing, Healthcare,
-                  Logistics, Construction, Agriculture, Hospitality, Power,
-                  Retail and more.
+                  Covering opportunities in major fileds like Agriculture ,
+                  BioTech,Finance, Banking, Insurance, Consulting,
+                  Constructions,IT, Telecom, Design, Engineering, Manufacturing,
+                  Healthcare, Logistics, Construction, Agriculture, Hospitality,
+                  Power, Retail and more.
                 </p>
               </div>
 
@@ -389,7 +397,7 @@ const Home = () => {
                 lineHeight: "1.2",
               }}
             >
-              Go Global with Confidence
+              Get Ready for Global Opportunities
             </h2>
 
             {/* Two Cards */}
@@ -432,7 +440,7 @@ const Home = () => {
                     marginBottom: "1.5rem",
                   }}
                 >
-                  Certified. Safe. Ready.
+                  Skilled. Secure. Ready.
                 </p>
                 <div style={{ marginBottom: "1.5rem" }}>
                   <div
@@ -445,7 +453,7 @@ const Home = () => {
                   >
                     <div className="circle-icons">✓</div>
                     <span style={{ color: "#374151", fontSize: "0.9rem" }}>
-                      Workplace safety protocols
+                      Workplace safety majors & protocols
                     </span>
                   </div>
                   <div
@@ -458,7 +466,7 @@ const Home = () => {
                   >
                     <div className="circle-icons">✓</div>
                     <span style={{ color: "#374151", fontSize: "0.9rem" }}>
-                      Equipment & Machine Operation Standards
+                      Equipment Handling Standards
                     </span>
                   </div>
                   <div
@@ -471,7 +479,7 @@ const Home = () => {
                   >
                     <div className="circle-icons"> ✓</div>
                     <span style={{ color: "#374151", fontSize: "0.9rem" }}>
-                      Regulatory rules & Legal processes
+                      Regulatory rules & Legalities
                     </span>
                   </div>
                   <div
@@ -483,7 +491,7 @@ const Home = () => {
                   >
                     <div className="circle-icons"> ✓</div>
                     <span style={{ color: "#374151", fontSize: "0.9rem" }}>
-                      Industry-specific technical & Operating Standards
+                      Industry-centric technical & Operating Standards
                     </span>
                   </div>
                 </div>
@@ -496,8 +504,8 @@ const Home = () => {
                     margin: 0,
                   }}
                 >
-                  "Safety and certification aren't optional—they're your global
-                  passport to job opportunities."
+                  "Safety and certification are your only way to secure global
+                  job opportunities."
                 </p>
               </div>
 
@@ -530,7 +538,7 @@ const Home = () => {
                     marginBottom: "1.5rem",
                   }}
                 >
-                  Skills + Compliance = Global Readiness
+                  Skills + Compliance = Success
                 </p>
                 <div style={{ marginBottom: "1.5rem" }}>
                   <div
@@ -544,7 +552,7 @@ const Home = () => {
                     <div className="circle-icons">✓</div>
 
                     <span style={{ color: "#374151", fontSize: "0.9rem" }}>
-                      Data Privacy & Protection
+                      Data Compliances
                     </span>
                   </div>
                   <div
@@ -582,7 +590,7 @@ const Home = () => {
                   >
                     <div className="circle-icons">✓</div>
                     <span style={{ color: "#374151", fontSize: "0.9rem" }}>
-                      Cross-border workplace standards
+                      Abroad workplace standards
                     </span>
                   </div>
                 </div>
@@ -595,8 +603,8 @@ const Home = () => {
                     margin: 0,
                   }}
                 >
-                  "Stand out as a technically skilled and legally informed
-                  professional ready for global challenges."
+                  "Get prepared technically and legally for global
+                  opportunities."
                 </p>
               </div>
             </div>
@@ -676,7 +684,7 @@ const Home = () => {
                   lineHeight: "1.2",
                 }}
               >
-                How it works
+                Steps to Success
               </h2>
 
               <div
@@ -719,7 +727,7 @@ const Home = () => {
                         marginBottom: "0.25rem",
                       }}
                     >
-                      Assess
+                      Assessment
                     </h3>
                     <p
                       style={{
@@ -728,8 +736,8 @@ const Home = () => {
                         lineHeight: "1.5",
                       }}
                     >
-                      Define target job roles, region, markets, and career
-                      goals.
+                      Select your job category and Define target job roles,
+                      region, markets, and career goals.
                     </p>
                   </div>
                 </div>
@@ -767,7 +775,7 @@ const Home = () => {
                         marginBottom: "0.25rem",
                       }}
                     >
-                      Build
+                      Prepare
                     </h3>
                     <p
                       style={{
@@ -776,8 +784,7 @@ const Home = () => {
                         lineHeight: "1.5",
                       }}
                     >
-                      Create and refine documents with expert training &
-                      feedback.
+                      Leverage expert advice to create and refine documents.
                     </p>
                   </div>
                 </div>
@@ -824,8 +831,8 @@ const Home = () => {
                         lineHeight: "1.5",
                       }}
                     >
-                      Shortlist employers, tailor applications, and submit
-                      correctly.
+                      Shortlist jobs, customize applications, and submit
+                      conveniently.
                     </p>
                   </div>
                 </div>
@@ -863,7 +870,7 @@ const Home = () => {
                         marginBottom: "0.25rem",
                       }}
                     >
-                      Prepare
+                      Polish your candidature
                     </h3>
                     <p
                       style={{
@@ -872,7 +879,7 @@ const Home = () => {
                         lineHeight: "1.5",
                       }}
                     >
-                      Rehearse interviews with structured guidance.
+                      Leverage structured guidance to refine your candidature .
                     </p>
                   </div>
                 </div>
@@ -1037,7 +1044,7 @@ const Home = () => {
                 lineHeight: "1.2",
               }}
             >
-              Outcomes you can expect
+              Key Benefits
             </h2>
 
             {/* Three Outcome Cards */}
@@ -1095,7 +1102,7 @@ const Home = () => {
                     marginBottom: "0.75rem",
                   }}
                 >
-                  Stand-Out Applications
+                  Optimised Applications
                 </h3>
                 <p
                   style={{
@@ -1104,7 +1111,7 @@ const Home = () => {
                     lineHeight: "1.5",
                   }}
                 >
-                  Documents aligned to hiring standards.
+                  Documents aligned to global hiring standards.
                 </p>
               </div>
 
@@ -1152,7 +1159,7 @@ const Home = () => {
                     marginBottom: "0.75rem",
                   }}
                 >
-                  More Interviews
+                  More Interview Opportunities
                 </h3>
                 <p
                   style={{
@@ -1161,7 +1168,7 @@ const Home = () => {
                     lineHeight: "1.5",
                   }}
                 >
-                  Improve conversions through targeted preparation.
+                  Improve your conversions through targeted preparation.
                 </p>
               </div>
 
