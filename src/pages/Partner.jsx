@@ -46,8 +46,6 @@ const Partner = () => {
                   the lives of blue-collar and white-collar job seekers.
                 </p>
 
-                <hr />
-
                 <div
                   style={{
                     background: "white",

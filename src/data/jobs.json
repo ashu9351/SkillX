@@ -1,124 +1,562 @@
 [
-  { "id": 1, "title": "Construction Worker", "company": "BuildWell International", "location": "Algeria", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$800 - 1,200/month" },
-  { "id": 2, "title": "Electrician", "company": "Global Electra Co.", "location": "Argentina", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$900 - 1,400/month" },
-  { "id": 3, "title": "Plumber", "company": "International Plumbing Works", "location": "Armenia", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$700 - 1,100/month" },
-
-  { "id": 4, "title": "Construction Worker", "company": "Aruba Builders", "location": "Aruba", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$1,000 - 1,500/month" },
-  { "id": 5, "title": "Security Guard", "company": "SecureForce International", "location": "Australia", "domain": "Security Services", "type": "Full-time", "experience": "1-4 years", "salary": "$1,200 - 1,800/month" },
-  { "id": 6, "title": "Forklift Operator", "company": "Global Logistics", "location": "Austria", "domain": "Logistics & Warehouse", "type": "Full-time", "experience": "2-3 years", "salary": "$1,100 - 1,600/month" },
-
-  { "id": 7, "title": "Electrician", "company": "Azerbaijan Electra Co.", "location": "Azerbaijan", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$600 - 1,000/month" },
-  { "id": 8, "title": "Plumber", "company": "Bahamas Plumbing Works", "location": "Bahamas", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$800 - 1,300/month" },
-  { "id": 9, "title": "Welder", "company": "Bahrain Metalcraft Ltd.", "location": "Bahrain", "domain": "Fabrication & Welding", "type": "Contract", "experience": "3-6 years", "salary": "$900 - 1,400/month" },
-
-  { "id": 10, "title": "Construction Worker", "company": "Barbados Builders", "location": "Barbados", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$800 - 1,200/month" },
-  { "id": 11, "title": "Electrician", "company": "Belgium Electra Co.", "location": "Belgium", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$1,200 - 1,800/month" },
-  { "id": 12, "title": "Plumber", "company": "Brazil Plumbing Works", "location": "Brazil", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$700 - 1,100/month" },
-
-  { "id": 13, "title": "Welder", "company": "Brunei Metalcraft Ltd.", "location": "Brunei", "domain": "Fabrication & Welding", "type": "Contract", "experience": "3-6 years", "salary": "$800 - 1,300/month" },
-  { "id": 14, "title": "Housekeeping Staff", "company": "Bulgaria Clean Services", "location": "Bulgaria", "domain": "Hospitality", "type": "Full-time", "experience": "1-2 years", "salary": "$500 - 800/month" },
-  { "id": 15, "title": "Forklift Operator", "company": "Canada Logistics Hub", "location": "Canada", "domain": "Logistics & Warehouse", "type": "Full-time", "experience": "2-3 years", "salary": "$1,500 - 2,200/month" },
-
-  { "id": 16, "title": "Security Guard", "company": "Chile SecureForce", "location": "Chile", "domain": "Security Services", "type": "Full-time", "experience": "1-4 years", "salary": "$600 - 900/month" },
-  { "id": 17, "title": "Housekeeping Staff", "company": "China Clean Co.", "location": "China", "domain": "Hospitality", "type": "Full-time", "experience": "1-2 years", "salary": "$400 - 700/month" },
-  { "id": 18, "title": "Plumber", "company": "Costa Rica Plumbing Works", "location": "Costa Rica", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$600 - 1,000/month" },
-
-  { "id": 19, "title": "Construction Worker", "company": "Croatia Builders", "location": "Croatia", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$800 - 1,200/month" },
-  { "id": 20, "title": "Electrician", "company": "Cyprus Electra Co.", "location": "Cyprus", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$900 - 1,400/month" },
-  { "id": 21, "title": "Plumber", "company": "Czech Republic Plumbing Works", "location": "Czech Republic", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$800 - 1,300/month" },
-
-  { "id": 22, "title": "Construction Worker", "company": "Denmark Build GmbH", "location": "Denmark", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$2,000 - 2,800/month" },
-  { "id": 23, "title": "Electrician", "company": "Dominican Republic Electra", "location": "Dominican Republic", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$600 - 900/month" },
-  { "id": 24, "title": "Plumber", "company": "Egypt Plumbing GmbH", "location": "Egypt", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$400 - 700/month" },
-
-  { "id": 25, "title": "Construction Worker", "company": "Equatorial Guinea Build", "location": "Equatorial Guinea", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$500 - 800/month" },
-  { "id": 26, "title": "Electrician", "company": "Estonia Electra", "location": "Estonia", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$900 - 1,400/month" },
-  { "id": 27, "title": "Plumber", "company": "Fiji Plumbing", "location": "Fiji", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$500 - 800/month" },
-
-  { "id": 28, "title": "Construction Worker", "company": "Finland Build Ltd.", "location": "Finland", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$1,800 - 2,500/month" },
-  { "id": 29, "title": "Electrician", "company": "France Electrics", "location": "France", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$1,600 - 2,200/month" },
-  { "id": 30, "title": "Plumber", "company": "Gabon Plumbing Co.", "location": "Gabon", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$600 - 900/month" },
-
-  { "id": 31, "title": "Construction Worker", "company": "Germany Build", "location": "Germany", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$1,600 - 2,200/month" },
-  { "id": 32, "title": "Electrician", "company": "Greece Electrics", "location": "Greece", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$800 - 1,200/month" },
-  { "id": 33, "title": "Plumber", "company": "Guyana Plumbing", "location": "Guyana", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$500 - 800/month" },
-
-  { "id": 34, "title": "Construction Worker", "company": "Hong Kong Build", "location": "Hong Kong", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$1,200 - 1,800/month" },
-  { "id": 35, "title": "Electrician", "company": "Hungary Electrics", "location": "Hungary", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$700 - 1,100/month" },
-  { "id": 36, "title": "Plumber", "company": "Iceland Plumbing", "location": "Iceland", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$1,800 - 2,500/month" },
-
-  { "id": 37, "title": "Construction Worker", "company": "India Build", "location": "India", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$300 - 600/month" },
-  { "id": 38, "title": "Electrician", "company": "Indonesia Electrics", "location": "Indonesia", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$400 - 700/month" },
-  { "id": 39, "title": "Plumber", "company": "Iran Plumbing", "location": "Iran", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$400 - 700/month" },
-
-  { "id": 40, "title": "Construction Worker", "company": "Ireland Build", "location": "Ireland", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$1,500 - 2,200/month" },
-  { "id": 41, "title": "Electrician", "company": "Israel Electrics", "location": "Israel", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$1,200 - 1,800/month" },
-  { "id": 42, "title": "Plumber", "company": "Italy Plumbing", "location": "Italy", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$1,000 - 1,500/month" },
-
-  { "id": 43, "title": "Construction Worker", "company": "Japan Build", "location": "Japan", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$1,500 - 2,200/month" },
-  { "id": 44, "title": "Electrician", "company": "Kazakhstan Electrics", "location": "Kazakhstan", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$600 - 900/month" },
-  { "id": 45, "title": "Plumber", "company": "Kuwait Plumbing", "location": "Kuwait", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$800 - 1,300/month" },
-
-  { "id": 46, "title": "Construction Worker", "company": "Latvia Build", "location": "Latvia", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$800 - 1,200/month" },
-  { "id": 47, "title": "Electrician", "company": "Libya Electrics", "location": "Libya", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$500 - 800/month" },
-  { "id": 48, "title": "Plumber", "company": "Lithuania Plumbing", "location": "Lithuania", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$800 - 1,200/month" },
-
-  { "id": 49, "title": "Construction Worker", "company": "Luxembourg Build", "location": "Luxembourg", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$2,000 - 2,800/month" },
-  { "id": 50, "title": "Electrician", "company": "Macau Electrics", "location": "Macau", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$1,000 - 1,500/month" },
-  { "id": 51, "title": "Plumber", "company": "Malaysia Plumbing", "location": "Malaysia", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$600 - 900/month" },
-
-  { "id": 52, "title": "Construction Worker", "company": "Maldives Build", "location": "Maldives", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$500 - 800/month" },
-  { "id": 53, "title": "Electrician", "company": "Malta Electrics", "location": "Malta", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$800 - 1,200/month" },
-  { "id": 54, "title": "Plumber", "company": "Mauritius Plumbing", "location": "Mauritius", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$600 - 900/month" },
-
-  { "id": 55, "title": "Construction Worker", "company": "Mexico Build", "location": "Mexico", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$600 - 900/month" },
-  { "id": 56, "title": "Electrician", "company": "Namibia Electrics", "location": "Namibia", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$500 - 800/month" },
-  { "id": 57, "title": "Plumber", "company": "Nauru Plumbing", "location": "Nauru", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$400 - 700/month" },
-
-  { "id": 58, "title": "Construction Worker", "company": "Netherlands Build", "location": "Netherlands", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$1,800 - 2,500/month" },
-  { "id": 59, "title": "Electrician", "company": "New Zealand Electrics", "location": "New Zealand", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$1,500 - 2,200/month" },
-  { "id": 60, "title": "Plumber", "company": "Norway Plumbing", "location": "Norway", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$2,000 - 2,800/month" },
-
-  { "id": 61, "title": "Construction Worker", "company": "Oman Build", "location": "Oman", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$700 - 1,100/month" },
-  { "id": 62, "title": "Electrician", "company": "Palau Electrics", "location": "Palau", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$500 - 800/month" },
-  { "id": 63, "title": "Plumber", "company": "Panama Plumbing", "location": "Panama", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$600 - 900/month" },
-
-  { "id": 64, "title": "Construction Worker", "company": "Peru Build", "location": "Peru", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$500 - 800/month" },
-  { "id": 65, "title": "Electrician", "company": "Philippines Electrics", "location": "Philippines", "domain": "Full-time", "experience": "2-4 years", "salary": "$400 - 700/month" },
-  { "id": 66, "title": "Plumber", "company": "Poland Plumbing", "location": "Poland", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$700 - 1,100/month" },
-
-  { "id": 67, "title": "Construction Worker", "company": "Portugal Build", "location": "Portugal", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$800 - 1,200/month" },
-  { "id": 68, "title": "Electrician", "company": "Puerto Rico Electrics", "location": "Puerto Rico", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$800 - 1,200/month" },
-  { "id": 69, "title": "Plumber", "company": "Qatar Plumbing", "location": "Qatar", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$900 - 1,400/month" },
-
-  { "id": 70, "title": "Construction Worker", "company": "Romania Build", "location": "Romania", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$600 - 900/month" },
-  { "id": 71, "title": "Electrician", "company": "Russia Electrics", "location": "Russia", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$500 - 800/month" },
-  { "id": 72, "title": "Plumber", "company": "Saint Lucia Plumbing", "location": "Saint Lucia", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$500 - 800/month" },
-
-  { "id": 73, "title": "Construction Worker", "company": "Saudi Arabia Build", "location": "Saudi Arabia", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$800 - 1,200/month" },
-  { "id": 74, "title": "Electrician", "company": "Serbia Electrics", "location": "Serbia", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$600 - 900/month" },
-  { "id": 75, "title": "Plumber", "company": "Seychelles Plumbing", "location": "Seychelles", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$500 - 800/month" },
-
-  { "id": 76, "title": "Construction Worker", "company": "Singapore Build", "location": "Singapore", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$1,200 - 1,800/month" },
-  { "id": 77, "title": "Electrician", "company": "Slovakia Electrics", "location": "Slovakia", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$700 - 1,100/month" },
-  { "id": 78, "title": "Plumber", "company": "Slovenia Plumbing", "location": "Slovenia", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$800 - 1,200/month" },
-
-  { "id": 79, "title": "Construction Worker", "company": "South Africa Build", "location": "South Africa", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$600 - 900/month" },
-  { "id": 80, "title": "Electrician", "company": "South Korea Electrics", "location": "South Korea", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$1,200 - 1,800/month" },
-  { "id": 81, "title": "Plumber", "company": "Spain Plumbing", "location": "Spain", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$800 - 1,200/month" },
-
-  { "id": 82, "title": "Construction Worker", "company": "Sweden Build", "location": "Sweden", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$1,800 - 2,500/month" },
-  { "id": 83, "title": "Electrician", "company": "Switzerland Electrics", "location": "Switzerland", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$2,200 - 3,000/month" },
-  { "id": 84, "title": "Plumber", "company": "Taiwan Plumbing", "location": "Taiwan", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$800 - 1,200/month" },
-
-  { "id": 85, "title": "Construction Worker", "company": "Thailand Build", "location": "Thailand", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$500 - 800/month" },
-  { "id": 86, "title": "Electrician", "company": "Turkey Electrics", "location": "Turkey", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$600 - 900/month" },
-  { "id": 87, "title": "Plumber", "company": "Tuvalu Plumbing", "location": "Tuvalu", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$400 - 700/month" },
-
-  { "id": 88, "title": "Construction Worker", "company": "UAE Build", "location": "UAE", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$900 - 1,400/month" },
-  { "id": 89, "title": "Electrician", "company": "UK Electrics", "location": "UK", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$1,400 - 2,000/month" },
-  { "id": 90, "title": "Plumber", "company": "Uruguay Plumbing", "location": "Uruguay", "domain": "Plumbing Services", "type": "Full-time", "experience": "2-5 years", "salary": "$600 - 900/month" },
-
-  { "id": 91, "title": "Construction Worker", "company": "USA Build", "location": "USA", "domain": "Construction", "type": "Full-time", "experience": "1-3 years", "salary": "$1,800 - 2,500/month" },
-  { "id": 92, "title": "Electrician", "company": "Vietnam Electrics", "location": "Vietnam", "domain": "Electrical Maintenance", "type": "Full-time", "experience": "2-4 years", "salary": "$400 - 700/month" }
+  {
+    "id": 1,
+    "title": "Material Handler",
+    "company": "Helix Group",
+    "location": "Sweden",
+    "domain": "Warehousing & Storage",
+    "type": "Part-time",
+    "experience": "3-5 years",
+    "salary": "SEK 3,013 - SEK 3,782/month"
+  },
+  {
+    "id": 2,
+    "title": "Stock Controller",
+    "company": "NextWave Group",
+    "location": "Algeria",
+    "domain": "Warehousing & Storage",
+    "type": "Contract",
+    "experience": "2-4 years",
+    "salary": "DZD 1,236 - DZD 1,876/month"
+  },
+  {
+    "id": 3,
+    "title": "Picker",
+    "company": "Prime Labs",
+    "location": "Italy",
+    "domain": "Warehousing & Storage",
+    "type": "Temporary",
+    "experience": "0-2 years",
+    "salary": "€2,070 - €2,974/month"
+  },
+  {
+    "id": 4,
+    "title": "Pallet Jack Operator",
+    "company": "Bright Solutions",
+    "location": "Singapore",
+    "domain": "Warehousing & Storage",
+    "type": "Temporary",
+    "experience": "5-7 years",
+    "salary": "SGD 1,111 - SGD 2,086/month"
+  },
+  {
+    "id": 5,
+    "title": "Tower Climber",
+    "company": "Vertex Labs",
+    "location": "Saint Lucia",
+    "domain": "Construction & Building",
+    "type": "Full-time",
+    "experience": "1-3 years",
+    "salary": "$1,785 - $2,148/month"
+  },
+  {
+    "id": 6,
+    "title": "Backhoe Operator",
+    "company": "Prime Group",
+    "location": "Finland",
+    "domain": "Construction & Building",
+    "type": "Contract",
+    "experience": "3-5 years",
+    "salary": "€3,203 - €4,150/month"
+  },
+  {
+    "id": 7,
+    "title": "Solar Panel Installer and Technician",
+    "company": "BluePeak Partners",
+    "location": "Croatia",
+    "domain": "Construction & Building",
+    "type": "Part-time",
+    "experience": "2-4 years",
+    "salary": "$3,474 - $3,820/month"
+  },
+  {
+    "id": 8,
+    "title": "Shotcrete Machine Operator",
+    "company": "NextWave Networks",
+    "location": "Singapore",
+    "domain": "Construction & Building",
+    "type": "Part-time",
+    "experience": "1-3 years",
+    "salary": "SGD 2,493 - SGD 3,470/month"
+  },
+  {
+    "id": 9,
+    "title": "Upholstery Technician",
+    "company": "Vertex Solutions",
+    "location": "Bahamas",
+    "domain": "Automobile & Automotive",
+    "type": "Contract",
+    "experience": "3-5 years",
+    "salary": "$1,696 - $2,031/month"
+  },
+  {
+    "id": 10,
+    "title": "Machine Operator",
+    "company": "Frontier Partners",
+    "location": "Estonia",
+    "domain": "Automobile & Automotive",
+    "type": "Part-time",
+    "experience": "3-5 years",
+    "salary": "$2,220 - $3,359/month"
+  },
+  {
+    "id": 11,
+    "title": "CNC Operator",
+    "company": "Bright International",
+    "location": "China",
+    "domain": "Automobile & Automotive",
+    "type": "Part-time",
+    "experience": "5-7 years",
+    "salary": "CNY 2,807 - CNY 3,545/month"
+  },
+  {
+    "id": 12,
+    "title": "Auto Glass Installer",
+    "company": "SilverLine Works",
+    "location": "Saudi Arabia",
+    "domain": "Automobile & Automotive",
+    "type": "Temporary",
+    "experience": "2-4 years",
+    "salary": "SAR 1,498 - SAR 1,981/month"
+  },
+  {
+    "id": 13,
+    "title": "Warehouse Assistant",
+    "company": "Nimbus Labs",
+    "location": "Peru",
+    "domain": "Automobile & Automotive",
+    "type": "Full-time",
+    "experience": "0-2 years",
+    "salary": "$1,226 - $2,711/month"
+  },
+  {
+    "id": 14,
+    "title": "Director of Customer Success",
+    "company": "Helix Industries",
+    "location": "Netherlands",
+    "domain": "Executive & Management",
+    "type": "Full-time",
+    "experience": "0-2 years",
+    "salary": "€3,392 - €4,691/month"
+  },
+  {
+    "id": 15,
+    "title": "Chief Innovation Officer",
+    "company": "BluePeak Labs",
+    "location": "Guyana",
+    "domain": "Executive & Management",
+    "type": "Contract",
+    "experience": "3-5 years",
+    "salary": "$1,247 - $2,376/month"
+  },
+  {
+    "id": 16,
+    "title": "Chief Operating Officer",
+    "company": "Bright Networks",
+    "location": "Algeria",
+    "domain": "Executive & Management",
+    "type": "Part-time",
+    "experience": "5-7 years",
+    "salary": "DZD 1,035 - DZD 2,515/month"
+  },
+  {
+    "id": 17,
+    "title": "Chief Compliance Officer",
+    "company": "Helix Works",
+    "location": "India",
+    "domain": "Executive & Management",
+    "type": "Part-time",
+    "experience": "1-3 years",
+    "salary": "₹2,131 - ₹2,661/month"
+  },
+  {
+    "id": 18,
+    "title": "Hydrology",
+    "company": "Vertex Solutions",
+    "location": "Indonesia",
+    "domain": "Engineering & Architecture",
+    "type": "Part-time",
+    "experience": "5-7 years",
+    "salary": "IDR 18,440,000 - IDR 25,940,000/month"
+  },
+  {
+    "id": 19,
+    "title": "Environmental Engineering",
+    "company": "Nimbus Labs",
+    "location": "Vietnam",
+    "domain": "Engineering & Architecture",
+    "type": "Part-time",
+    "experience": "1-3 years",
+    "salary": "66,040,000 VND - 89,500,000 VND/month"
+  },
+  {
+    "id": 20,
+    "title": "Mechanical Engineering",
+    "company": "NextWave Industries",
+    "location": "Qatar",
+    "domain": "Engineering & Architecture",
+    "type": "Temporary",
+    "experience": "1-3 years",
+    "salary": "QAR 2,808 - QAR 3,419/month"
+  },
+  {
+    "id": 21,
+    "title": "Architectural Drafting",
+    "company": "Bright Group",
+    "location": "Uruguay",
+    "domain": "Engineering & Architecture",
+    "type": "Contract",
+    "experience": "3-5 years",
+    "salary": "$2,719 - $3,843/month"
+  },
+  {
+    "id": 22,
+    "title": "Quarry Manager",
+    "company": "Vertex Solutions",
+    "location": "Serbia",
+    "domain": "Energy & Utilities",
+    "type": "Full-time",
+    "experience": "0-2 years",
+    "salary": "$1,537 - $1,875/month"
+  },
+  {
+    "id": 23,
+    "title": "Engineering Geologist",
+    "company": "BluePeak Labs",
+    "location": "Australia",
+    "domain": "Energy & Utilities",
+    "type": "Part-time",
+    "experience": "2-4 years",
+    "salary": "AUD 3,340 - AUD 4,534/month"
+  },
+  {
+    "id": 24,
+    "title": "Energy Engineer",
+    "company": "Helix International",
+    "location": "Estonia",
+    "domain": "Energy & Utilities",
+    "type": "Temporary",
+    "experience": "1-3 years",
+    "salary": "$2,537 - $3,570/month"
+  },
+  {
+    "id": 25,
+    "title": "Water Treatment Plant Operator",
+    "company": "Prime Labs",
+    "location": "Dominican Republic",
+    "domain": "Energy & Utilities",
+    "type": "Temporary",
+    "experience": "2-4 years",
+    "salary": "$2,334 - $3,375/month"
+  },
+  {
+    "id": 26,
+    "title": "Press Release Writer",
+    "company": "BluePeak Labs",
+    "location": "Vietnam",
+    "domain": "Content & Translation",
+    "type": "Part-time",
+    "experience": "1-3 years",
+    "salary": "27,580,000 VND - 53,540,000 VND/month"
+  },
+  {
+    "id": 27,
+    "title": "Copywriting",
+    "company": "NextWave Group",
+    "location": "Namibia",
+    "domain": "Content & Translation",
+    "type": "Part-time",
+    "experience": "2-4 years",
+    "salary": "$2,494 - $3,205/month"
+  },
+  {
+    "id": 28,
+    "title": "SEO Content Specialist",
+    "company": "Nimbus Networks",
+    "location": "Barbados",
+    "domain": "Content & Translation",
+    "type": "Full-time",
+    "experience": "0-2 years",
+    "salary": "$3,271 - $4,578/month"
+  },
+  {
+    "id": 29,
+    "title": "Content Marketing Manager",
+    "company": "Prime Holdings",
+    "location": "Argentina",
+    "domain": "Content & Translation",
+    "type": "Part-time",
+    "experience": "3-5 years",
+    "salary": "ARS 2,589 - ARS 3,774/month"
+  },
+  {
+    "id": 30,
+    "title": "Ghost Writing",
+    "company": "SilverLine Solutions",
+    "location": "Estonia",
+    "domain": "Content & Translation",
+    "type": "Part-time",
+    "experience": "3-5 years",
+    "salary": "$608 - $1,607/month"
+  },
+  {
+    "id": 31,
+    "title": "Workforce Planning Specialist",
+    "company": "Nimbus International",
+    "location": "Romania",
+    "domain": "Business, Consulting & Management",
+    "type": "Part-time",
+    "experience": "2-4 years",
+    "salary": "RON 1,491 - RON 1,810/month"
+  },
+  {
+    "id": 32,
+    "title": "Project Manager",
+    "company": "Helix Solutions",
+    "location": "Saudi Arabia",
+    "domain": "Business, Consulting & Management",
+    "type": "Contract",
+    "experience": "0-2 years",
+    "salary": "SAR 805 - SAR 2,201/month"
+  },
+  {
+    "id": 33,
+    "title": "Chief Executive Officer",
+    "company": "Helix Networks",
+    "location": "Norway",
+    "domain": "Business, Consulting & Management",
+    "type": "Part-time",
+    "experience": "0-2 years",
+    "salary": "NOK 2,680 - NOK 3,044/month"
+  },
+  {
+    "id": 34,
+    "title": "Performance Improvement Consultant",
+    "company": "Prime Works",
+    "location": "Denmark",
+    "domain": "Business, Consulting & Management",
+    "type": "Full-time",
+    "experience": "1-3 years",
+    "salary": "DKK 2,253 - DKK 2,698/month"
+  },
+  {
+    "id": 35,
+    "title": "Innovation Manager",
+    "company": "Vertex Works",
+    "location": "Russia",
+    "domain": "Business, Consulting & Management",
+    "type": "Full-time",
+    "experience": "5-7 years",
+    "salary": "935 ₽ - 1,993 ₽/month"
+  },
+  {
+    "id": 36,
+    "title": "Business Intelligence Analyst",
+    "company": "Bright Systems",
+    "location": "Taiwan",
+    "domain": "Business Process Outsourcing & Knowledge Process Outsourcing",
+    "type": "Contract",
+    "experience": "0-2 years",
+    "salary": "NT$63,800 - NT$177,600/month"
+  },
+  {
+    "id": 37,
+    "title": "Workforce Analyst",
+    "company": "Frontier Labs",
+    "location": "Slovenia",
+    "domain": "Business Process Outsourcing & Knowledge Process Outsourcing",
+    "type": "Full-time",
+    "experience": "5-7 years",
+    "salary": "€1,473 - €2,709/month"
+  },
+  {
+    "id": 38,
+    "title": "Policy Analyst",
+    "company": "NextWave Partners",
+    "location": "Greece",
+    "domain": "Business Process Outsourcing & Knowledge Process Outsourcing",
+    "type": "Full-time",
+    "experience": "1-3 years",
+    "salary": "€2,113 - €2,896/month"
+  },
+  {
+    "id": 39,
+    "title": "MIS Executive",
+    "company": "Nimbus Networks",
+    "location": "Croatia",
+    "domain": "Business Process Outsourcing & Knowledge Process Outsourcing",
+    "type": "Contract",
+    "experience": "5-7 years",
+    "salary": "$3,278 - $4,561/month"
+  },
+  {
+    "id": 40,
+    "title": "Compliance Officer",
+    "company": "Helix Industries",
+    "location": "Argentina",
+    "domain": "Business Process Outsourcing & Knowledge Process Outsourcing",
+    "type": "Full-time",
+    "experience": "1-3 years",
+    "salary": "ARS 1,683 - ARS 2,119/month"
+  },
+  {
+    "id": 41,
+    "title": "Assembly Technician",
+    "company": "Vertex Industries",
+    "location": "Italy",
+    "domain": "Manufacturing & Production",
+    "type": "Temporary",
+    "experience": "2-4 years",
+    "salary": "€808 - €1,197/month"
+  },
+  {
+    "id": 42,
+    "title": "Packaging Operator",
+    "company": "SilverLine Industries",
+    "location": "South Korea",
+    "domain": "Manufacturing & Production",
+    "type": "Full-time",
+    "experience": "0-2 years",
+    "salary": "₩196,600 - ₩243,300/month"
+  },
+  {
+    "id": 43,
+    "title": "Grinder Operator",
+    "company": "Bright International",
+    "location": "South Korea",
+    "domain": "Manufacturing & Production",
+    "type": "Temporary",
+    "experience": "5-7 years",
+    "salary": "₩349,000 - ₩456,500/month"
+  },
+  {
+    "id": 44,
+    "title": "Mechanical Technician",
+    "company": "Global Labs",
+    "location": "Romania",
+    "domain": "Manufacturing & Production",
+    "type": "Full-time",
+    "experience": "1-3 years",
+    "salary": "RON 2,834 - RON 3,107/month"
+  },
+  {
+    "id": 45,
+    "title": "Bus and Shuttle Driver",
+    "company": "BluePeak Holdings",
+    "location": "Austria",
+    "domain": "Transport & Logistic",
+    "type": "Part-time",
+    "experience": "0-2 years",
+    "salary": "€2,048 - €3,394/month"
+  },
+  {
+    "id": 46,
+    "title": "IT Consultant",
+    "company": "Frontier International",
+    "location": "Malaysia",
+    "domain": "Transport & Logistic",
+    "type": "Part-time",
+    "experience": "1-3 years",
+    "salary": "MYR 1,325 - MYR 2,369/month"
+  },
+  {
+    "id": 47,
+    "title": "Freight Forwarder",
+    "company": "NextWave Partners",
+    "location": "Aruba",
+    "domain": "Transport & Logistic",
+    "type": "Temporary",
+    "experience": "1-3 years",
+    "salary": "$1,692 - $2,218/month"
+  },
+  {
+    "id": 48,
+    "title": "Supply Chain Manager",
+    "company": "Prime Group",
+    "location": "UAE",
+    "domain": "Transport & Logistic",
+    "type": "Full-time",
+    "experience": "3-5 years",
+    "salary": "AED 1,511 - AED 2,119/month"
+  },
+  {
+    "id": 49,
+    "title": "Mechanic Workshop Helper",
+    "company": "BluePeak Industries",
+    "location": "Nauru",
+    "domain": "Transport & Logistic",
+    "type": "Part-time",
+    "experience": "1-3 years",
+    "salary": "$696 - $1,291/month"
+  },
+  {
+    "id": 50,
+    "title": "Cattle Feeder",
+    "company": "Helix Partners",
+    "location": "Macau",
+    "domain": "Agriculture & Fisheries",
+    "type": "Full-time",
+    "experience": "0-2 years",
+    "salary": "$1,669 - $2,234/month"
+  },
+  {
+    "id": 51,
+    "title": "GPS Operator",
+    "company": "Bright Solutions",
+    "location": "Saudi Arabia",
+    "domain": "Agriculture & Fisheries",
+    "type": "Full-time",
+    "experience": "5-7 years",
+    "salary": "SAR 2,379 - SAR 3,286/month"
+  },
+  {
+    "id": 52,
+    "title": "Humidity Monitor",
+    "company": "BluePeak Group",
+    "location": "Vietnam",
+    "domain": "Agriculture & Fisheries",
+    "type": "Full-time",
+    "experience": "3-5 years",
+    "salary": "59,220,000 VND - 71,000,000 VND/month"
+  },
+  {
+    "id": 53,
+    "title": "Bee Farming Worker",
+    "company": "Global Group",
+    "location": "Germany",
+    "domain": "Agriculture & Fisheries",
+    "type": "Full-time",
+    "experience": "5-7 years",
+    "salary": "€2,805 - €3,408/month"
+  },
+  {
+    "id": 54,
+    "title": "Fish Grader",
+    "company": "SilverLine Labs",
+    "location": "Kuwait",
+    "domain": "Agriculture & Fisheries",
+    "type": "Contract",
+    "experience": "5-7 years",
+    "salary": "KWD 1,885 - KWD 2,340/month"
+  },
+  {
+    "id": 55,
+    "title": "Drivers",
+    "company": "SilverLine Labs",
+    "location": "Kuwait",
+    "domain": "Unskilled Workers",
+    "type": "Contract",
+    "experience": "5-7 years",
+    "salary": "KWD 1,885 - KWD 2,340/month"
+  },
+  {
+    "id": 56,
+    "title": "Farmworkers",
+    "company": "Farm Labs",
+    "location": "China",
+    "domain": "Unskilled Workers",
+    "type": "Contract",
+    "experience": "5-7 years",
+    "salary": "CNY 1,885 - CNY 2,340/month"
+  }
 ]
