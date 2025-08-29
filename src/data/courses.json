@@ -103,5 +103,11 @@
       "Logistics, Material Handling & Support",
       "Specialized Technicians"
     ]
+  },
+  {
+    "id": 8,
+    "title": "Unskilled",
+    "fees": "Customized Fees",
+    "courses": ["Enroll for any course of your choice in this category"]
   }
 ]

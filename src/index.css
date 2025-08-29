@@ -684,6 +684,10 @@ body::before {
   transform: translateY(-2px);
   box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
 }
+.submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 
 /* Responsive Design */
 @media (max-width: 1024px) {

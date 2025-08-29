@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const location = useLocation()
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const location = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const isActive = (path) => {
-    return location.pathname === path
-  }
+    return location.pathname === path;
+  };
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen)
-  }
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false)
-  }
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu} aria-label="Home">
+        <Link
+          to="/"
+          className="navbar-logo"
+          onClick={closeMobileMenu}
+          aria-label="Home"
+        >
           <img
-            src="/images/logo.png"
+            src="/images/skillexlogo.png"
             alt="Website Logo"
             className="navbar-logo-img"
           />
         </Link>
-        
-        <button 
-          className={`mobile-menu-toggle ${isMobileMenuOpen ? 'active' : ''}`}
+
+        <button
+          className={`mobile-menu-toggle ${isMobileMenuOpen ? "active" : ""}`}
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
         >
@@ -37,27 +42,27 @@ const Navbar = () => {
           <span></span>
           <span></span>
         </button>
-        
-        <div className={`navbar-links ${isMobileMenuOpen ? 'active' : ''}`}>
-          <Link 
-            to="/courses" 
-            className={`navbar-link ${isActive('/courses') ? 'active' : ''}`}
+
+        <div className={`navbar-links ${isMobileMenuOpen ? "active" : ""}`}>
+          <Link
+            to="/courses"
+            className={`navbar-link ${isActive("/courses") ? "active" : ""}`}
             onClick={closeMobileMenu}
           >
             Get skilled
           </Link>
-          
-          <Link 
-            to="/jobs" 
-            className={`navbar-link ${isActive('/jobs') ? 'active' : ''}`}
+
+          <Link
+            to="/jobs"
+            className={`navbar-link ${isActive("/jobs") ? "active" : ""}`}
             onClick={closeMobileMenu}
           >
             Jobs
           </Link>
-          
-          <Link 
-            to="/partner" 
-            className={`navbar-link ${isActive('/partner') ? 'active' : ''}`}
+
+          <Link
+            to="/partner"
+            className={`navbar-link ${isActive("/partner") ? "active" : ""}`}
             onClick={closeMobileMenu}
           >
             Grow with Us
@@ -65,7 +70,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar 
+export default Navbar;

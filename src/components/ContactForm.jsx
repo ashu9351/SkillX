@@ -28,6 +28,7 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
     .get("query")
     ?.toLowerCase()
     .includes("course");
+  const showCategory = searchParams.get("showCategory") && isCourseEnquiry;
   console.log(isCourseEnquiry);
 
   const states = useMemo(() => {
@@ -222,7 +223,7 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
             )}
 
             {/* Job Category and Specific Job Fields for Job Applications */}
-            {isJobApplication && (
+            {(isJobApplication || showCategory) && (
               <>
                 <div className="form-group">
                   <label htmlFor="jobCategory">Job Category *</label>
@@ -293,6 +294,10 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
                     ? `Job Application - ${selectedJobCategory}${
                         selectedSpecificJob ? ` - ${selectedSpecificJob}` : ""
                       }`
+                    : showCategory
+                    ? `Course - ${selectedJobCategory}${
+                        selectedSpecificJob ? ` - ${selectedSpecificJob}` : ""
+                      }`
                     : formData.query
                 }
                 onChange={(e) => handleChange("query", e.target.value)}
@@ -319,7 +324,11 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
               />
             </div>
 
-            <button type="submit" className="submit-button">
+            <button
+              type="submit"
+              className="submit-button"
+              disabled={!selectedJobCategory || !selectedSpecificJob}
+            >
               {isJobApplication ? "Submit Job Application" : "Submit"}
             </button>
           </form>
