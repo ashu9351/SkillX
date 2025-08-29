@@ -20,7 +20,7 @@ const Courses = () => {
   }, []);
 
   const handleBuyNow = (query) => {
-    navigate(`/contact?query=${encodeURIComponent(query)}`);
+    navigate(`/contact?query=${encodeURIComponent(query)}&showCategory=true`);
     // Scroll to top when navigating to contact page
     setTimeout(() => {
       window.scrollTo(0, 0);
