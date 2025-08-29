@@ -26,7 +26,7 @@ const Home = () => {
       description:
         'SkillEX Abroad is launching an empowering new policy called "Grow with Us", designed to build a nationwide partner network. This initiative opens doors for motivated individuals from any city in the country to collaborate with us and become official partners in our mission to transform the lives of blue-collar and white-collar job seekers.',
       icon: "🤝",
-      link: "/partner",
+      link: "/partner?isPartner=true",
     },
   ];
 
