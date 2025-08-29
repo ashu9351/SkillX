@@ -28,8 +28,9 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
     .get("query")
     ?.toLowerCase()
     .includes("course");
+  const isPartnerEnquiry = searchParams.get("isPartner");
+
   const showCategory = searchParams.get("showCategory") && isCourseEnquiry;
-  console.log(isCourseEnquiry);
 
   const states = useMemo(() => {
     const list = State.getStatesOfCountry("IN") || [];
@@ -327,7 +328,10 @@ const ContactForm = ({ country = "", showLocationFields = false, onClose }) => {
             <button
               type="submit"
               className="submit-button"
-              disabled={!selectedJobCategory || !selectedSpecificJob}
+              disabled={
+                !isPartnerEnquiry &&
+                (!selectedJobCategory || !selectedSpecificJob)
+              }
             >
               {isJobApplication ? "Submit Job Application" : "Submit"}
             </button>

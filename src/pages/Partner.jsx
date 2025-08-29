@@ -3,6 +3,24 @@ import ContactForm from "../components/ContactForm";
 const Partner = () => {
   return (
     <div className="container" style={{ padding: "2rem 0" }}>
+      <div
+        style={{
+          textAlign: "center",
+          marginBottom: "3rem",
+          background: "black",
+        }}
+      >
+        <img
+          src="/images/skillexlogo_resized.png"
+          alt="SkillEX Abroad Logo"
+          className="logo-hover"
+          style={{
+            width: "50%",
+            maxWidth: "100%",
+            objectFit: "contain",
+          }}
+        />
+      </div>
       <div className="partner-wrapper">
         <div className="partner-description">
           <div className="page-header">
