@@ -109,6 +109,7 @@ const Footer = () => {
 
           <div className="footer-section">
             <h3>Email</h3>
+            <p>legal@skillexabroad.com</p>
             <p>skillexabroad@gmail.com</p>
           </div>
 
@@ -189,7 +190,7 @@ const Footer = () => {
 
         <p className="footer-copyright">
           GST No: : 08IEXPK2794J1ZE
-          <br />© 2024 SkillEX Abroad. All rights reserved.
+          <br />© 2025 SkillEX Abroad. All rights reserved.
         </p>
       </div>
     </footer>
