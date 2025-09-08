@@ -189,7 +189,7 @@ const Footer = () => {
         <div className="footer-divider"></div>
 
         <p className="footer-copyright">
-          GST No: : 08IEXPK2794J1ZE
+          GST No: 08IEXPK2794J1ZE
           <br />© 2025 SkillEX Abroad. All rights reserved.
         </p>
       </div>
